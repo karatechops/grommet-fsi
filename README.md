@@ -1,4 +1,4 @@
-# Grommet Universal Single Page Template
+# Grommet Horizontal Scrolling Single Page Template
 
 This is the source code for a Grommet based universal single page. To run the website execute the following:
 
