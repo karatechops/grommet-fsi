@@ -1,0 +1,215 @@
+// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
+
+@import 'grommet/scss/hpe/index';
+@import 'objects.meter';
+@import 'objects.nav';
+
+.grommet.grommetux-app--inline,
+.grommetux-article {
+	// Allow for scroll monitoring.
+	overflow: visible;
+}
+
+.text-frame {
+	position: absolute;
+	top: 35%;
+	width: 80vw;
+	transform: translateY(-50%);
+	// Allow text to overlap illustration in some 
+	// instances without losing legibility.
+	background: rgba(255, 255, 255, 0.75);
+
+	@include media-query(lap-and-up) {
+		top: 40%;
+		transform: translateY(-50%);
+		width: 45vw;
+	}
+
+	h1 {
+		font-size: 2.75rem;
+		font-weight: 600;
+		padding: 5px 0;
+		margin: 0;
+		line-height: 1.1;
+
+		@include media-query(lap-and-up) {
+			font-size: 4rem;
+			margin: 0 20px 0 0;
+			line-height: 1;
+			flex-basis: 38%;
+		}
+	}
+
+	h3 {
+		max-width: 946px;
+		font-size: 1.25rem;
+		padding: 5px 0;
+		margin: 0;
+		line-height: 1.2;
+
+		@include media-query(lap-and-up) {
+			font-size: 1.5rem;
+	    //padding-top: 17px;
+    	line-height: 1.2;
+		}
+	}
+
+	.text-frame__row {
+		flex-wrap: wrap;
+
+		@include media-query(lap-and-up) {
+			flex-wrap: nowrap;
+		}
+	}
+
+	.grommetux-meter {
+		min-width: 125px;
+
+		@include media-query(lap-and-up) {
+			padding-right: 15px;
+		}
+	}
+
+	&.title-frame {
+		width: 100vw;
+		top: 100px;
+		transform: none;
+
+		@include media-query(lap-and-up) {
+			top: 33%;
+		}
+
+		h1 {
+			padding: 10px 20px;
+		}
+
+		h3 {
+			padding: 0 24px;
+			margin: 0;
+
+			@include media-query(lap-and-up) {
+				padding: 0;
+			}
+		}
+
+		.title-frame--border {
+			border: 8px nth($brand-accent-colors, 1) solid;
+			margin: 0 24px 24px;
+		}
+	}
+
+	.text-frame__desktop-header {
+		display: none;
+		padding-bottom: 20px;
+
+		@include media-query(lap-and-up) {
+			display: block;
+			min-width: 100vw;
+			margin-top: -60px;
+		}
+	}
+
+	.text-frame__title {
+		font-weight: 400;
+		padding-bottom: 20px;
+		font-size: 1.5rem;
+		margin-bottom: 0;
+		padding: 5px 0;
+
+		@include media-query(lap-and-up) {
+			font-weight: 600;
+			font-size: 2.4rem;
+			line-height: 1.1;
+		}
+	}
+}
+
+// Explicitly define grommet class here to override
+// Grommet's base image margins.
+.grommet .illustration {
+	// Setting min-width fixes Firefox svg scale bug.
+	width: 1100vw;
+	min-width: 1100vw;
+  height: auto;
+  max-height: 100vh;
+  margin: 0;
+  align-self: flex-end;
+  padding-bottom: 10px;
+
+  @include media-query(lap-and-up) {
+  	width: 600vw;
+  	min-width: 600vw;
+  	//margin: 0 0 24px;
+  }
+}
+
+section.end-frame-illustration {
+	width: 100vw;
+	min-height: 100vh;
+	height: 100%;
+	justify-content: flex-end;
+
+	@include media-query(lap-and-up) {
+  	width: 50vw;
+  }
+
+	img {
+		width: 100%;
+		height: auto;
+		margin: 0;
+		padding-bottom: 10px;
+	}
+}
+
+.end-frame {
+	width: 100vw;
+  min-height: 100vh;
+  height: 100%;
+  padding: 0 24px;
+
+  .grommetux-heading {
+  	font-size: 2.1rem;
+
+  	@include media-query(lap-and-up) {
+  		font-size: 3rem;
+  	}
+  }
+
+  a.grommetux-button.end-frame__button {
+  	margin: 20px 0;
+  }
+
+  a.grommetux-anchor {
+  	display: flex;
+		font-weight: 400;
+		font-size: 1rem;
+		color: #333;
+		margin-top: 40px;
+		transition: color 0.3s ease-in-out;
+
+		svg { stroke: #333; }
+
+		.grommetux-control-icon-share {
+			max-width: 18px;
+		}
+
+		&:hover {
+			text-decoration: none;
+			color: #000;
+
+			svg {
+				stroke: #000;
+
+				&.grommetux-control-icon-share {
+					transform: none;
+				}
+			}
+		}
+	}
+}
+
+#{$dark-background-context} {
+  .end-frame__button {
+  	color: #fff;
+  }
+}
