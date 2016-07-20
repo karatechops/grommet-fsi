@@ -1,6 +1,7 @@
 import React from 'react';
 import classnames from 'classnames';
 
+import Next from 'grommet/components/icons/base/Next';
 import HPELogo from './HPELogo.js';
 
 const CLASS_ROOT = 'section-nav';
@@ -21,6 +22,9 @@ export default function Nav (props) {
     <nav className={classes}>
     	<div className={containerClasses}>
         <HPELogo />
+        <div className={`${CLASS_ROOT}__control`}>
+          Scroll right to start journey <Next />
+        </div>
       </div>
     </nav>
   );
