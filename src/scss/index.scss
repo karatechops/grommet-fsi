@@ -181,7 +181,11 @@ section.end-frame-illustration {
     height: auto;
     max-height: 100vh;
     margin: 0;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
+
+    @include media-query(lap-and-up) {
+      padding-bottom: 40px;
+    }
   }
 }
 
