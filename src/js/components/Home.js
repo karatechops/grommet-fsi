@@ -56,7 +56,6 @@ class Home extends Component {
   }
 
   _onShareClick() {
-    console.log('share click')
     this.setState({layerActive: true});
   }
 

@@ -268,7 +268,7 @@ section.end-frame-illustration {
   &.section-2--light {
     background-color: #fff;
   }
-  
+
   &.section-2--dark {
     background-color: nth($brand-accent-colors, 2);
 
@@ -283,6 +283,7 @@ article section {
   position: relative;
   height: 100vh;
 }
+
 // This is a hacky way of reducing the site height 
 // to counter the horizontal scroll bar/nav on iOS devices.
 .app-mobile {
