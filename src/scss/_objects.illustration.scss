@@ -8,7 +8,7 @@
   max-height: 100vh;
   margin: 0;
   align-self: flex-end;
-  padding-bottom: 30px;
+  padding-bottom: 40px;
 
   @include media-query(lap-and-up) {
   	width: 400vw;
@@ -44,7 +44,7 @@
 		position: fixed;
 		width: 35vw;
 		left: 50vw;
-		padding-bottom: 30px;
+		padding-bottom: 40px;
 		transform: translateX(-50%);
 		opacity: 0;
 		z-index: 2;
@@ -94,7 +94,7 @@
   max-height: 100vh;
   margin: 0;
   align-self: flex-end;
-  padding-bottom: 30px;
+  padding-bottom: 40px;
 
   @include media-query(lap-and-up) {
   	width: 210vw;
