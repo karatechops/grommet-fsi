@@ -6,11 +6,17 @@
 @import 'objects.nav';
 @import 'objects.illustration';
 @import 'objects.layer';
+@import 'objects.progress';
 
-.grommet.grommetux-app--inline,
+/*.grommet.grommetux-app--inline,
 .grommetux-article {
   // Allow for scroll monitoring.
   overflow: visible;
+}*/
+
+.grommetux-app {
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
 }
 
 .text-frame {
@@ -166,6 +172,7 @@
 
 section.end-frame-illustration {
   width: 100vw;
+  min-width: 100vw;
   //min-height: 100vh;
   height: 100%;
   max-height: 100%;
@@ -174,6 +181,7 @@ section.end-frame-illustration {
 
   @include media-query(lap-and-up) {
     width: 50vw;
+    min-width: 50vw;
   }
 
   img {
@@ -191,10 +199,17 @@ section.end-frame-illustration {
 
 .end-frame {
   width: 100vw;
+  min-width: 100vw;
   min-height: 100vh;
   height: 100%;
-  padding: 0 24px;
+  padding: 100px 24px 0;
   z-index: 15;
+
+  @include media-query(lap-and-up) {
+    width: 50vw;
+    min-width: 50vw;
+    padding: 0 24px;
+  }
 
   .grommetux-heading {
     font-size: 2.1rem;
@@ -216,54 +231,30 @@ section.end-frame-illustration {
       padding: 10px 30px;
     }
   }
+}
 
-  a.grommetux-anchor {
-    display: flex;
-    font-weight: 400;
-    font-size: 1rem;
-    color: #333;
-    margin-top: 40px;
-    transition: color 0.3s ease-in-out;
+.section-1 {
+  width: 900vw;
+  min-width: 900vw;
 
-    @media (min-width: $desk-wide) {
-      font-size: 1.5rem;
-      line-height: 1.2;
-    }
-
-    svg {
-      stroke: #333;
-    }
-
-    .grommetux-control-icon-share {
-      max-width: 18px;
-
-      @media (min-width: $desk-wide) {
-        max-width: 30px;
-        width: 30px;
-        height: 30px;
-      }
-    }
-
-    &:hover {
-      text-decoration: none;
-      color: #000;
-
-      svg {
-        stroke: #000;
-
-        &.grommetux-control-icon-share {
-          transform: none;
-        }
-      }
-    }
+  @include media-query(lap-and-up) {
+    width: 400vw;
+    min-width: 400vw;
   }
 }
 
 .section-2 {
   position: relative;
+  width: 410vw;
+  min-width: 410vw;
   height: 100vh;
   transition: background-color 0.75s ease-out;
   z-index: 10;
+
+  @include media-query(lap-and-up) {
+    width: 210vw;
+    min-width: 210vw;
+  }
 
   .text-frame {
     transition: background-color 0.75s ease-out, color 0.75s ease-out;
@@ -283,7 +274,7 @@ section.end-frame-illustration {
   }
 }
 
-article section {
+section {
   position: relative;
   height: 100vh;
   min-height: 100vh;
@@ -291,10 +282,12 @@ article section {
 
 // This is a hacky way of reducing the site height 
 // to counter the horizontal scroll bar/nav on iOS devices.
-.app-mobile {
-  height: calc(100vh - 70px);
+.mobile {
+  .grommet-ux-app {
+    height: calc(100vh - 70px);
+  }
 
-  article section {
+  section {
     height: calc(100vh - 70px);
     min-height: calc(100vh - 70px);
   }
@@ -302,6 +295,10 @@ article section {
   .end-frame {
     height: calc(100vh - 70px);
     min-height: calc(100vh - 70px);
+  }
+
+  .grommet.grommetux-layer.grommetux-layer--flush {
+    height: calc(100vh - 70px);
   }
 }
 

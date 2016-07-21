@@ -1,38 +1,37 @@
 // (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
 
 import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
 
 import Responsive from 'grommet/utils/Responsive';
 import classnames from 'classnames';
 
-import Article from 'grommet/components/Article';
+import Box from 'grommet/components/Box';
 import Section from 'grommet/components/Section';
 import Heading from 'grommet/components/Heading';
-import Headline from 'grommet/components/Headline';
 import Button from 'grommet/components/Button';
-import Anchor from 'grommet/components/Anchor';
-import Layer from 'grommet/components/Layer';
-import Share from 'grommet/components/icons/base/Share';
-import SocialShare from 'grommet/components/SocialShare';
 
 import Section1 from '../sections/Section1';
 import Section2 from '../sections/Section2';
 import Background from './Background';
 import Nav from './Nav';
 
+// Global timer to monitor scrolling.
+let SCROLL_TIMER;
+
 class Home extends Component {
   constructor() {
     super();
     this._onResponsive = this._onResponsive.bind(this);
     this._updateProgress = this._updateProgress.bind(this);
-    this._onShareClick = this._onShareClick.bind(this);
-    this._onLayerClose = this._onLayerClose.bind(this);
+    this._startScrollingTimer = this._startScrollingTimer.bind(this);
 
     this.state = {
       layout: 'large',
       progress: 0,
       color: 'light',
-      layerActive: false
+      layerActive: false,
+      isScrolling: false
     };
   }
 
@@ -40,6 +39,8 @@ class Home extends Component {
     this._responsive = Responsive.start(this._onResponsive);
     window.addEventListener('scroll', this._updateProgress);
     window.addEventListener('resize', this._updateProgress);
+    ReactDOM.findDOMNode(this.refs.home).addEventListener('scroll', this._updateProgress);
+    ReactDOM.findDOMNode(this.refs.home).addEventListener('resize', this._updateProgress);
     this._updateProgress();
   }
 
@@ -55,90 +56,68 @@ class Home extends Component {
     });
   }
 
-  _onShareClick() {
-    this.setState({layerActive: true});
-  }
-
   _onLayerClose() {
     this.setState({layerActive: false});
   }
 
+  _startScrollingTimer() {
+    clearTimeout(SCROLL_TIMER);
+
+    SCROLL_TIMER = setTimeout(() => {
+      this.setState({scrolling: false});
+    }, 150);
+  }
+
   _updateProgress() {
-    let xOffset = window.pageXOffset;
+    //console.log('scroll')
+    //console.log('home bounding rect:',ReactDOM.findDOMNode(this.refs.home).getBoundingClientRect());
+    //console.log('section1 bounding rect:',ReactDOM.findDOMNode(this.refs.section1).getBoundingClientRect());
+    //let xOffset = window.pageXOffset;
+    let xOffset = -1 * (ReactDOM.findDOMNode(this.refs.section1).getBoundingClientRect().left);
     // Main illustration is 900 (mobile) 400 (desktop) vw.
     // Dark illustration is 410 (mobile) 210 (desktop) vw.
     // End frame illustration is 100 (mobile) 50 (desktop) vw.
-    // End frame is 100 vw.
+    // End frame is 100 (mobile) 50 (desktop) vw.
     let siteWidth = (this.state.layout === 'small')
       ? window.innerWidth * 15.1
-      : window.innerWidth * 7.6;
+      : window.innerWidth * 7.1;
     let scrollPercent = xOffset / (siteWidth - window.innerWidth);
-    let scrollPercentRounded = Math.round(scrollPercent * 100);
-    if (scrollPercentRounded !== this.state.progress) this.setState({progress:scrollPercentRounded});
+    let scrollPercentRounded = Number(Math.max( Math.round(scrollPercent * 1000) / 10, 0 ).toFixed(2));
+    if (scrollPercentRounded !== this.state.progress) 
+      this.setState({
+        progress: scrollPercentRounded,
+        scrolling: true
+      });
     // For temp debug purposes.
     console.log('progress:', scrollPercentRounded);
+    this._startScrollingTimer();
   }
 
   render () {
-    let shareIcon = <Share className={`end-frame__icon`} colorIndex={"dark-2"} />;
-
-    let navActive = (this.state.progress < 3)
-      ? true
-      : false;
-
     let homeClasses = classnames([
       'home'
     ]);
 
-    let layer = (this.state.layerActive) ? (
-      <div className="share-layer">
-        <Layer onClose={this._onLayerClose} closer={true} flush={true} align={"center"}>
-          <div className="share">
-            <Headline size={"large"} strong={true}>
-              Thanks for sharing, we're glad you enjoyed it.
-            </Headline>
-            <div className="share__icons">
-              <SocialShare type="email"
-              link="#"
-              title="Grommet Infographic"
-              text="HPE...." />
-              <SocialShare type="twitter"
-              link="#"
-              text="@HPE..." />
-              <SocialShare type="facebook"
-              link="#" />
-              <SocialShare type="linkedin"
-              link="#"
-              title="Grommet Infographic"
-              text="HPE..." />
-            </div>
-          </div>
-        </Layer>
-      </div>
-    ) : (null);
-
     return (
-      <Article className={homeClasses} scrollStep={false} controls={false} wrap={false} responsive={false} direction="row">
-        <Nav active={navActive} />
-        <Section1 layout={this.state.layout} progress={this.state.progress} />
+      <Box ref="home" className={homeClasses} style={{position:'relative', overflow:'scroll' }} wrap={false} responsive={false} direction="row">
+        <Nav progress={this.state.progress} />
+        <Section1 ref="section1" layout={this.state.layout} progress={this.state.progress} scrolling={this.state.scrolling}/>
         <Section2 layout={this.state.layout} progress={this.state.progress} />
 
-        <Section className="end-frame-illustration" colorIndex="neutral-2" pad="none" responsive={false}>
+        <Section className="end-frame-illustration" colorIndex="neutral-1" pad="none" responsive={false}>
           <Background />
         </Section>
 
-        <Section className="end-frame" colorIndex="neutral-2" pad="none" justify="center" align="start" >
-          {layer}
+        <Section className="end-frame" colorIndex="neutral-1" pad="none" justify="center" align="start" >
           <Heading tag="h1">
           For more information about how HPE is 
           accelerating the digital transformation of the 
           Financial Services industry, visit us here
           </Heading>
           <Button className="end-frame__button" href="http://www.hpe.com/solutions/enable" label="www.hpe.com" primary={true} />
-          <Anchor label={'Share'} icon={shareIcon} reverse={true} onClick={this._onShareClick} />
         </Section>
 
-      </Article>
+      </Box>
     );
   }
 

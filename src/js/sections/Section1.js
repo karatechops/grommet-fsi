@@ -7,6 +7,8 @@ import Heading from 'grommet/components/Heading';
 import Box from 'grommet/components/Box';
 import Meter from 'grommet/components/Meter';
 
+import Hero from '../components/Hero';
+
 export default class Section1 extends Component {
   constructor(props) {
     super(props);
@@ -94,19 +96,8 @@ export default class Section1 extends Component {
       }
     ]);
 
-    let heroTrigger = (this.props.layout === 'small')
-      ? 21
-      : 17;
-
-    let heroStyles = classnames([
-      'illustration--stacked', 
-      'illustration__hero', {
-        ['illustration__hero--active']: this.props.progress < heroTrigger
-      }
-    ]);
-
     return (
-      <Section pad="none" direction="row" responsive={false} ref="section">
+      <Section className="section-1" pad="none" direction="row" responsive={false} ref="section">
 
         <Box className="text-frame title-frame" justify="center" align="center">
           
@@ -181,8 +172,10 @@ export default class Section1 extends Component {
           <img className={womanStyles} src="../img/woman.svg" /> 
           <img className={strollerStyles} src="../img/stroller.svg" /> 
           <img className={bikerStyles} src="../img/biker.svg" /> 
-          <img className={woman2styles} src="../img/woman-2.svg" /> 
-          <img className={heroStyles} src="../img/hero.svg" ref="hero" /> 
+          <img className={woman2styles} src="../img/woman-2.svg" />
+          <Hero layout={this.props.layout} 
+                progress={this.props.progress} 
+                scrolling={this.props.scrolling} />
           <img className={bgStyles} src="../img/bg.svg" />
         </div>
       </Section>
@@ -191,6 +184,7 @@ export default class Section1 extends Component {
 };
 
 Section1.propTypes = {
-  layout: PropTypes.string.isRequired,
-  progress: PropTypes.number
+  layout: PropTypes.string,
+  progress: PropTypes.number,
+  scrolling: PropTypes.bool
 };

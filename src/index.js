@@ -9,9 +9,17 @@ if (! Modernizr.flexbox ||
     'If you are using the latest Internet Explorer, you will need to turn off Compatibility Mode.');
 }
 
+// Mobile browser is detected to remove height below browser nav.
+// This removes the vertical scroll bar to maintain the horizontal experience.
+// If overflow is set to hidden progress detection is disabled.
+function _isMobileDevice() {
+  return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+}
+
 import routes from './js/routes';
 import ReactDOM from 'react-dom';
 
 const element = document.getElementById('content');
 ReactDOM.render(routes, element);
 document.body.classList.remove('loading');
+if (_isMobileDevice()) document.body.classList.add('mobile');

@@ -1,74 +1,113 @@
 nav.section-nav {
-	position: fixed;
-	top: 0;
-	width: 100vw;
-	color: nth($brand-accent-colors, 1);
-	z-index: 10;
-	transition: transform 0.3s ease-out;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  color: #333;
+  z-index: 20;
+  transition: transform 0.3s ease-out;
 
-	.section-nav--active {
-		transform: translateY(0);
-	}
+  &.section-nav--active {
+    transform: translateY(0);
+  }
 
-	&:not(.section-nav--active) {
-		transform: translateY(calc(-100%));
-	}
+  &:not(.section-nav--active) {
+    transform: translateY(calc(-100% + 4px));
+  }
 
-	.section-nav__container {
-		display: flex;
-		flex-direction: row;
-		background: #fff;
+  &.section-nav--end {
+    right: 0;
+  }
 
-		.logo-hpe {
-			width: 50%;
-			padding: 15px;
+  .section-nav__container {
+    display: flex;
+    flex-direction: row;
+    background: #fff;
 
-			img {
-				max-width: 129px;
-			}
-		}
+    .logo-hpe {
+      width: 50%;
+      padding: 15px;
 
-		.section-nav__icon {
-			margin-left: 13px;
+      img {
+        max-width: 129px;
+      }
+    }
 
-			&.more-arrow {
-				transform-origin: 50%;
-				transform: rotate(-45deg);
-			}
-		}
+    .section-nav__icon {
+      margin-left: 13px;
 
-		&.section-nav__container--started {
-			border-bottom: 1px solid #f0f0f0;
-		}
+      &.more-arrow {
+        transform-origin: 50%;
+        transform: rotate(-45deg);
+      }
+    }
 
-		.section-nav__control {
-			display: flex;
-			justify-content: flex-end;
-			align-items: center;
-			width: 50%;
-			padding: 13px 20px;
-			color: $text-color;
-			line-height: 1.2;
+    &.section-nav__container--started {
+      border-bottom: 1px solid #f0f0f0;
+    }
 
-			svg {
-				fill: $brand-color;
-				stroke: $brand-color;
-				cursor: auto;
-			}
-		}
-	}
+    .section-nav__control {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      width: 50%;
+      padding: 13px 20px;
+      color: #333;
+      line-height: 1.2;
 
-	@media(min-width: 500px) {
-		.section-nav__container {
-			.logo-hpe {
-				padding: 24px 48px;
-			}
+      @include media-query(lap-and-up) {
+        justify-content: flex-end;
+        align-items: center;
+        padding: 24px 48px;
+      }
 
-			.section-nav__control {
-				justify-content: flex-end;
-				align-items: center;
-				padding: 24px 48px;
-			}
-		}
-	}
+      a.grommetux-anchor {
+        font-weight: 400;
+        font-size: 1rem;
+        color: #333;
+        svg { stroke: #333; }
+        transition: color 0.3s ease-in-out;
+
+        .grommetux-control-icon-share {
+          max-width: 18px;
+        }
+
+        &:hover {
+          text-decoration: none;
+          color: #000;
+
+          svg {
+            stroke: #000;
+
+            &.grommetux-control-icon-share {
+              transform: none;
+            }
+          }
+        }
+      }
+    }
+
+    .section-nav__control-start {
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+
+    .section-nav__control-next,
+    .section-nav__control-previous {
+      width: 25%;
+    }
+  }
+
+  @media(min-width: 500px) {
+    .section-nav__container {
+      .logo-hpe {
+        padding: 24px 48px;
+      }
+
+      .section-nav__control {
+        justify-content: flex-end;
+        align-items: center;
+        padding: 24px 48px;
+      }
+    }
+  }
 }
