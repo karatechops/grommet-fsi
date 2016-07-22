@@ -60,16 +60,8 @@ export default class Section1 extends Component {
       }
     ]);
 
-    let musicLoverTrigger = (this.props.layout === 'small')
-      ? 22
-      : 17;
-
     let musicLoverStyles = classnames([
-      'illustration--stacked',
-      'illustration__item',
-      'illustration__item--left', {
-        ['illustration__item--active']: this.props.progress > musicLoverTrigger
-      }
+      'illustration--stacked'
     ]);
 
     let strollerTrigger = (this.props.layout === 'small')
