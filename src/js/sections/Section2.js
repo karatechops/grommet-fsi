@@ -57,11 +57,11 @@ export default class Section2 extends Component {
       }
     ]);
 
-    let hotspotContent =
+    let hotspotContent = (
       <div>
         <Headline size="large" strong={true}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in nisi lectus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</Headline>
       </div>
-    ;
+    );
 
     return (
       <Section className={sectionClasses} pad="none" direction="row" responsive={false} ref="section">
