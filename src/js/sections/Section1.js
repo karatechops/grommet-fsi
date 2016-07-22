@@ -48,18 +48,6 @@ export default class Section1 extends Component {
       }
     ]);
 
-    let womanTrigger = (this.props.layout === 'small')
-      ? 22
-      : 17;
-
-    let womanStyles = classnames([
-      'illustration--stacked',
-      'illustration__item',
-      'illustration__item--left', {
-        ['illustration__item--active']: this.props.progress > womanTrigger
-      }
-    ]);
-
     let musicLoverStyles = classnames([
       'illustration--stacked'
     ]);
@@ -173,11 +161,10 @@ export default class Section1 extends Component {
 
         <div className="illustration" ref="illustration">
           <img className={`illustration--stacked`} style={{zIndex: 5}} src="../img/buildings-1.svg" /> 
-          <img className={womanStyles} src="../img/woman.svg" />
           <img className={strollerStyles} src="../img/stroller.svg" /> 
           <img className={bikerStyles} src="../img/biker.svg" /> 
           <img className={woman2styles} src="../img/woman-2.svg" />
-          <Hero layout={this.props.layout} 
+          <Hero layout={this.props.layout}
                 progress={this.props.progress} 
                 scrolling={this.props.scrolling} />
           <img className={bgStyles} src="../img/bg.svg" />

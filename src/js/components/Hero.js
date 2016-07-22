@@ -4,33 +4,33 @@ import classnames from 'classnames';
 
 let isWalking = false;
 let animInterval;
-let heroLoop = [
-  'hero',
-  'hero-walk-01',
-  'hero-walk-02'
-];
 
 export default class Hero extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      heroImg: 'hero'
+      heroLoop: [
+        'hero',
+        'hero-walk-01',
+        'hero-walk-02'
+      ],
+      currHeroImg: 'hero'
     };
   }
 
   componentDidUpdate(prevProps, prevState) {
     if (this.props.scrolling === true && isWalking === false) {
       animInterval = setInterval(() => {
-        switch(this.state.heroImg) {
-          case 'hero-walk-01':
-            this.setState({heroImg: heroLoop[2]});
+        switch(this.state.currHeroImg) {
+          case this.state.heroLoop[1]:
+            this.setState({currHeroImg: this.state.heroLoop[2]});
             break;
-          case 'hero-walk-02':
-            this.setState({heroImg: heroLoop[1]});
+          case this.state.heroLoop[2]:
+            this.setState({currHeroImg: this.state.heroLoop[1]});
             break;
           default:
-            this.setState({heroImg: heroLoop[1]});
+            this.setState({currHeroImg: this.state.heroLoop[1]});
         }
       }, 250);
 
@@ -38,14 +38,20 @@ export default class Hero extends Component {
     } else if (this.props.scrolling === false && isWalking === true ) {
       clearInterval(animInterval);
       isWalking = false;
-      this.setState({heroImg: heroLoop[0]});
+      this.setState({currHeroImg: this.state.heroLoop[0]});
     }
+
+    //if 
   }
 
   render() {
-    let heroTrigger = (this.props.layout === 'small')
-      ? 21
-      : 17;
+    let heroSwitchTrigger = (this.props.layout === 'small')
+      ? 24.2
+      : 20.4;
+
+    let  heroTrigger = (this.props.layout === 'small')
+      ? 58
+      : 55;
 
     let heroStyles = classnames([
       'illustration--stacked', 
@@ -54,9 +60,13 @@ export default class Hero extends Component {
       }
     ]);
 
+    let woman = (this.props.progress > heroSwitchTrigger) 
+      ? '-woman'
+      : '';
+
     return (
       <div className={heroStyles} >
-        <img src={`../img/${this.state.heroImg}.svg`} ref="hero" /> 
+        <img src={`../img/${this.state.currHeroImg}${woman}.svg`} ref="hero" /> 
       </div>
     );
   }
@@ -64,5 +74,6 @@ export default class Hero extends Component {
 
 Hero.propTypes = {
   layout: PropTypes.string.isRequired,
-  scrolling: PropTypes.bool
+  scrolling: PropTypes.bool,
+  loop: PropTypes.array
 };
