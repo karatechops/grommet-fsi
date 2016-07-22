@@ -5,18 +5,16 @@
 @import 'objects.meter';
 @import 'objects.nav';
 @import 'objects.illustration';
+@import 'objects.illustration2';
 @import 'objects.layer';
 @import 'objects.progress';
-
-/*.grommet.grommetux-app--inline,
-.grommetux-article {
-  // Allow for scroll monitoring.
-  overflow: visible;
-}*/
+@import 'objects.hotspot';
 
 .grommetux-app {
   overflow: scroll;
-  -webkit-overflow-scrolling: touch;
+  // The below will allow iOS to maintain momentum in the scroll.
+  // Side effect is image juttering.
+  //-webkit-overflow-scrolling: touch;
 }
 
 .text-frame {
@@ -132,6 +130,12 @@
         max-width: 1284px;
         font-size: 2rem;
       }
+      
+      // Avoid horizontal scroll bar on iPhone5.
+      @media (max-width: 320px) {
+        font-size: 1.2rem;
+        line-height: 1.1
+      }
     }
 
     .title-frame--border {
@@ -143,6 +147,7 @@
   .text-frame__desktop-header {
     display: none;
     padding-bottom: 20px;
+    flex-basis: auto;
 
     @include media-query(lap-and-up) {
       display: block;

@@ -4,7 +4,11 @@ import classnames from 'classnames';
 
 import Section from 'grommet/components/Section';
 import Heading from 'grommet/components/Heading';
+import Headline from 'grommet/components/Headline';
 import Box from 'grommet/components/Box';
+
+import Illustration2 from '../components/Illustration2';
+import Hotspot from '../components/Hotspot';
 
 export default class Section2 extends Component {
   constructor(props) {
@@ -32,6 +36,32 @@ export default class Section2 extends Component {
         ['section-2--dark']: this.props.progress > sectionColorTrigger
       }
     ]);
+
+    let building1Trigger = (this.props.layout === 'small')
+      ? 64
+      : 63;
+
+    let building2Trigger = (this.props.layout === 'small')
+      ? 74
+      : 73;
+
+    let building3Trigger = (this.props.layout === 'small')
+      ? 84
+      : 84;
+
+    let illustration2Classes = classnames([
+      'illustration-2', {
+        ['building-1--active'] : this.props.progress > building1Trigger,
+        ['building-2--active'] : this.props.progress > building2Trigger,
+        ['building-3--active'] : this.props.progress > building3Trigger
+      }
+    ]);
+
+    let hotspotContent =
+      <div>
+        <Headline size="large" strong={true}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in nisi lectus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</Headline>
+      </div>
+    ;
 
     return (
       <Section className={sectionClasses} pad="none" direction="row" responsive={false} ref="section">
@@ -72,10 +102,13 @@ export default class Section2 extends Component {
             credit union to a high-end financial boutique.
           </Heading>
         </Box>
-
-        <div className="illustration-2">
-          <img src="../img/bg-2.svg" />
-        </div>
+        <Hotspot style={{alignSelf: 'flex-end'}} content={hotspotContent} name="hotspot" top={'55%'} left={'77.5%'}>
+          <Hotspot style={{alignSelf: 'flex-end'}} content={hotspotContent} name="hotspot" top={'52%'} left={'20%'}>
+            <Hotspot style={{alignSelf: 'flex-end'}} content={hotspotContent} name="hotspot" top={'15%'} left={'53%'}>
+              <Illustration2 className={illustration2Classes} />
+            </Hotspot>
+          </Hotspot>
+        </Hotspot>
       </Section>
     );
   }

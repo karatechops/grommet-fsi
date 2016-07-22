@@ -69,10 +69,6 @@ class Home extends Component {
   }
 
   _updateProgress() {
-    //console.log('scroll')
-    //console.log('home bounding rect:',ReactDOM.findDOMNode(this.refs.home).getBoundingClientRect());
-    //console.log('section1 bounding rect:',ReactDOM.findDOMNode(this.refs.section1).getBoundingClientRect());
-    //let xOffset = window.pageXOffset;
     let xOffset = -1 * (ReactDOM.findDOMNode(this.refs.section1).getBoundingClientRect().left);
     // Main illustration is 900 (mobile) 400 (desktop) vw.
     // Dark illustration is 410 (mobile) 210 (desktop) vw.
@@ -88,8 +84,8 @@ class Home extends Component {
         progress: scrollPercentRounded,
         scrolling: true
       });
-    // For temp debug purposes.
-    console.log('progress:', scrollPercentRounded);
+    // Uncomment below for debug purposes.
+    // console.log('progress:', scrollPercentRounded);
     this._startScrollingTimer();
   }
 

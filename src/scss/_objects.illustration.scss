@@ -1,9 +1,9 @@
 // Explicitly define grommet class here to override
 // Grommet's base image margins.
 .grommet .illustration {
-	// Setting min-width fixes Firefox svg scale bug.
-	width: 900vw;
-	min-width: 900vw;
+  // Setting min-width fixes Firefox svg scale bug.
+  width: 900vw;
+  min-width: 900vw;
   height: auto;
   max-height: 100vh;
   margin: 0;
@@ -12,100 +12,79 @@
 
   @include media-query(lap-and-up) {
     padding-bottom: 40px;
-  	width: 400vw;
-  	min-width: 400vw;
+    width: 400vw;
+    min-width: 400vw;
   }
 
   img {
-  	width: 100%;
+    width: 100%;
   }
 
-	* {
-		transition: opacity 0.25s ease-out, transform 0.25s ease-out;
-	}
+  * {
+    transition: opacity 0.25s ease-out, transform 0.25s ease-out;
+  }
 
-	.illustration--stacked {
-		position: absolute;
-		left: 0;
-	}
+  .illustration--stacked {
+    position: absolute;
+    left: 0;
+  }
 
-	.illustration__background {
-		opacity: 0;
-		transform: scaleY(0);
-		transform-origin: bottom;
-		transition: all 1s ease-out;
+  .illustration__background {
+    opacity: 0;
+    transform: scaleY(0);
+    transform-origin: bottom;
+    transition: all 1s ease-out;
 
-		&.illustration__background--active {
-			opacity: 1;
-			transform: scaleY(1);
-		}
-	}
+    &.illustration__background--active {
+      opacity: 1;
+      transform: scaleY(1);
+    }
+  }
 
-	.illustration__hero {
-		position: fixed;
-		width: 35vw;
-		left: 50vw;
-		padding-bottom: 20px;
+  .illustration__hero {
+    position: fixed;
+    width: 35vw;
+    left: 50vw;
+    padding-bottom: 20px;
 
-		transform: translateX(-50%);
-		opacity: 0;
-		z-index: 2;
+    transform: translateX(-50%);
+    opacity: 0;
+    z-index: 2;
 
-		@include media-query(lap-and-up) {
-			width: 16vw;
+    @include media-query(lap-and-up) {
+      width: 16vw;
       padding-bottom: 40px;
-		}
+    }
 
-		&.illustration__hero--active {
-			opacity: 1;
-		}
-	}
-
-	.illustration__item {
-		opacity: 0;
-
-		&.illustration__item--left {
-			transform: translateX(-10vw);
-		}
-
-		&.illustration__item--right {
-			transform: translateX(10vw);
-		}
-
-		&.illustration__item--active {
-			opacity: 1;
-			transform: translateX(0vw);
-		}
-	}
-
-	.illustration__woman {
-		opacity: 0;
-		transform: translateX(-10vw);
-
-		&.illustration__woman--active {
-			opacity: 1;
-			transform: translateX(0vw);
-		}
-	}
-}
-
-.grommet .illustration-2 {
-	// Setting min-width fixes Firefox svg scale bug.
-	width: 410vw;
-	min-width: 410vw;
-  height: auto;
-  max-height: 100vh;
-  margin: 0;
-  align-self: flex-end;
-  padding-bottom: 20px;
-
-  @include media-query(lap-and-up) {
-  	padding-bottom: 40px;
-  	width: 210vw;
-  	min-width: 210vw;
+    &.illustration__hero--active {
+      opacity: 1;
+    }
   }
 
-  img {
-  	width: 100%;
+  .illustration__item {
+    opacity: 0;
+
+    &.illustration__item--left {
+      transform: translateX(-10vw);
+    }
+
+    &.illustration__item--right {
+      transform: translateX(10vw);
+    }
+
+    &.illustration__item--active {
+      opacity: 1;
+      transform: translateX(0vw);
+    }
+  }
+
+  .illustration__woman {
+    opacity: 0;
+    transform: translateX(-10vw);
+
+    &.illustration__woman--active {
+      opacity: 1;
+      transform: translateX(0vw);
+    }
   }
 }

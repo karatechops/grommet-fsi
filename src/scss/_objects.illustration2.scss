@@ -1,0 +1,131 @@
+.grommet .illustration-2 {
+  // Setting min-width fixes Firefox svg scale bug.
+  width: 410vw;
+  min-width: 410vw;
+  height: auto;
+  max-height: 100vh;
+  position: relative;
+  margin: 0;
+  align-self: flex-end;
+  padding-bottom: 20px;
+
+  @include media-query(lap-and-up) {
+    padding-bottom: 40px;
+    width: 210vw;
+    min-width: 210vw;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  svg {
+    position: absolute;
+    width: 100%;
+    align-self: flex-end;
+
+    .st0{fill:none;stroke:#50C3CC;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
+    .st1{fill:none;stroke:#50C3CC;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:0,7.041;}
+    .st2{fill:none;stroke:#50C3CC;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:0,7.355;}
+    .st3{fill:none;stroke:#50C3CC;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:0,7.2242;}
+    .st4{fill:none;stroke:#50C3CC;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:0,7.1942;}
+    .st5{fill:none;stroke:#50C3CC;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:0,7.2179;}
+    .st6{fill:none;stroke:#FFFFFF;stroke-width:3;stroke-linecap:square;stroke-miterlimit:10;}
+    .st7{fill:#FFFFFF;stroke:#614767;stroke-width:0.75;stroke-miterlimit:10;}
+    .st8{fill:#00AF86;stroke:#614767;stroke-width:0.75;stroke-miterlimit:10;}
+    .st9{fill:none;stroke:#50C3CC;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:0,6.9651;}
+    .st10{fill:none;stroke:#50C3CC;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:0,7.1503;}
+    .st11{fill:none;stroke:#50C3CC;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:0,6.9434;}
+    .st12{fill:none;stroke:#00B288;stroke-width:3;stroke-miterlimit:10;}
+    .st13{fill:none;stroke:#F69679;stroke-width:3;stroke-miterlimit:10;}
+    .st14{fill:none;stroke:#00B48D;stroke-width:3;stroke-miterlimit:10;}
+    .st15{fill:none;stroke:#50C3CC;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:0,7.0406;}
+    .st16{fill:none;stroke:#50C3CC;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:0,7.1176;}
+    .st17{fill:none;stroke:#50C3CC;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:0,7.0532;}
+    .st18{fill:none;stroke:#50C3CC;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:0,7.0853;}
+    .st19{fill:none;stroke:#50C3CC;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:0,7.0122;}
+    .st20{fill:none;stroke:#50C3CC;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:0,7.0654;}
+  
+
+    .line__vertical {
+      transform-origin: bottom;
+      transform: scaleY(0);
+      transition: all .2s ease-out;
+    }
+
+    .line__horizontal {
+      transform: scaleX(0);
+      transition: all .2s ease-out;
+
+      &.line__horizontal--right {
+        transform-origin: right;
+      }
+
+      &.line__horizontal--left {
+        transform-origin: left;
+      }
+    }
+
+    .main-icon {
+      opacity: 0;
+      transform: scale(0);
+      transform-origin: center;
+      transition: all .25s ease-out;
+    }
+  }
+
+  &.building-1--active {
+    .lines-1 {
+      .line__vertical {
+        transform: scaleY(1);
+      }
+
+      .line__horizontal {
+        transform: scaleX(1);
+      }
+
+      .main-icon {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+  }
+
+  &.building-2--active {
+    .lines-2 {
+      .line__vertical {
+        transform: scaleY(1);
+      }
+
+      .line__horizontal {
+        transform: scaleX(1);
+      }
+
+      .main-icon {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+  }
+
+  &.building-3--active {
+    .lines-3 {
+      .line__vertical {
+        transform: scaleY(1);
+      }
+
+      .line__horizontal {
+        transform: scaleX(1);
+      }
+
+      .main-icon {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+  }
+
+  &.illustration-2__line1--active {
+    opacity: 0;
+  }
+}

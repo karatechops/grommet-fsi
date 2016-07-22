@@ -1,0 +1,84 @@
+$base-size: 40px;
+// To be ported to core animations mixins
+@mixin scale-up-fade-out($duration, $delay) {
+  -webkit-animation-name: scale-up-fade-out;
+  -webkit-animation-duration: $duration;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-delay: $delay;
+  animation-name: scale-up-fade-out;
+  animation-duration: $duration;
+  animation-iteration-count: infinite;
+  animation-delay: $delay;
+}
+
+@keyframes scale-up-fade-out {
+  0% {
+  	-webkit-transform: scale(1);
+  	transform: scale(1);
+  	opacity: 1;
+  }
+
+  15% {
+  	opacity: 1;
+  }
+
+  100% {
+  	-webkit-transform: scale(1.4);
+  	transform: scale(1.4);
+  	opacity: 0;
+  }
+}
+
+.hotspot {
+	// Do we need inline-block?
+	display: inline-block;
+	position: relative;
+
+	.hotspot__container {
+		position: absolute;
+		transform: translateX(-50%) translateY(-50%);
+		z-index: 2;
+
+		.hotspot__icon-container {
+			position: relative;
+			line-height: 0;
+			transition: transform 0.25s ease-out;
+
+			&:hover {
+				transform: scale(1.2);
+				cursor: pointer;
+
+				.hotspot__icon::after {
+					-webkit-animation: none;
+					animation: none;
+				}
+			}
+
+			.hotspot__icon {
+				svg {
+					width: $base-size;
+					height: $base-size;
+					border-radius: $base-size;
+					padding: 9px;
+					background: nth($brand-accent-colors, 1);
+					stroke: #fff;
+			  }
+
+			  &::after {
+			  	display: block;
+			  	content: "";
+					width: $base-size;
+					height: $base-size;
+					position: absolute;
+					top: 0;
+					left: 0;
+					box-sizing: border-box;
+					transform-origin: center;
+			    border: 1px solid nth($brand-accent-colors, 1);
+			    border-radius: $base-size;
+				  @include scale-up-fade-out(1.5s, 0.2s);
+			  }
+			}
+		}
+	}
+}
