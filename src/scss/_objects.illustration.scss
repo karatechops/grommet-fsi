@@ -66,25 +66,30 @@
 
     &.illustration__item--left {
       transform: translateX(-10vw);
+      -ms-transform: translateX(-50px);
     }
 
     &.illustration__item--right {
       transform: translateX(10vw);
+      -ms-transform: translateX(50px);
     }
 
     &.illustration__item--active {
       opacity: 1;
       transform: translateX(0vw);
+      -ms-transform: translateX(0);
     }
   }
 
   .illustration__woman {
     opacity: 0;
     transform: translateX(-10vw);
+    -ms-transform: translateX(-50px);
 
     &.illustration__woman--active {
       opacity: 1;
       transform: translateX(0vw);
+      -ms-transform: translateX(0);
     }
   }
 }
