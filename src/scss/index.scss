@@ -12,6 +12,8 @@
 
 .grommetux-app {
   overflow: scroll;
+  overflow-x: scroll;
+  overflow-y: hidden;
   // The below will allow iOS to maintain momentum in the scroll.
   // Side effect is image juttering.
   //-webkit-overflow-scrolling: touch;

@@ -14,7 +14,7 @@ nav.section-nav {
 
   &:not(.section-nav--active) {
     transform: translateY(calc(-100% + 4px));
-    -ms-transform: translateY(calc(-100% + 4px));
+    -ms-transform: translateY(-96%);
     -webkit-transform: translateY(calc(-100% + 4px));
   }
 
