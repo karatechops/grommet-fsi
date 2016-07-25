@@ -97,7 +97,7 @@ class Home extends Component {
     ]);
 
     return (
-      <Box ref="home" className={homeClasses} style={{position:'relative', overflow:'auto', maxHeight:'100vh' }} wrap={false} responsive={false} direction="row">
+      <Box ref="home" className={homeClasses} style={{position:'relative', overflow:'auto', overflowY:'hidden', maxHeight:'100vh' }} wrap={false} responsive={false} direction="row">
         <Nav progress={this.state.progress} />
         <Section1 ref="section1" layout={this.state.layout} progress={this.state.progress} scrolling={this.state.scrolling}/>
         <Section2 layout={this.state.layout} progress={this.state.progress} />
