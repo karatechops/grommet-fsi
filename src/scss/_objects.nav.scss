@@ -7,11 +7,15 @@ nav.section-nav {
   transition: transform 0.3s ease-out;
 
   &.section-nav--active {
-    transform: translateY(0);
+    transform: translateY(0); 
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
   }
 
   &:not(.section-nav--active) {
     transform: translateY(calc(-100% + 4px));
+    -ms-transform: translateY(calc(-100% + 4px));
+    -webkit-transform: translateY(calc(-100% + 4px));
   }
 
   &.section-nav--end {
