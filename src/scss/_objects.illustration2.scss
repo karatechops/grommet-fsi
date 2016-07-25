@@ -50,13 +50,13 @@
     .line__vertical {
       transform-origin: bottom;
       transform: scaleY(0);
-      -ms-transform: scale(0,0);
+      -ms-transform: scale(0, 0);
       transition: all 0.2s ease-out;
     }
 
     .line__horizontal {
       transform: scaleX(0);
-      -ms-transform: scale(0,0);
+      -ms-transform: scale(0, 0);
       transition: all 0.2s ease-out;
 
       &.line__horizontal--right {
@@ -82,18 +82,18 @@
     .lines-1 {
       .line__vertical {
         transform: scaleY(1);
-        -ms-transform: scale(1,1);
+        -ms-transform: scale(1, 1);
       }
 
       .line__horizontal {
         transform: scaleX(1);
-        -ms-transform: scale(1,1);
+        -ms-transform: scale(1, 1);
       }
 
       .main-icon {
         opacity: 1;
         transform: scale(1);
-        -ms-transform: scale(1,1);
+        -ms-transform: scale(1, 1);
       }
     }
   }
@@ -102,18 +102,18 @@
     .lines-2 {
       .line__vertical {
         transform: scaleY(1);
-        -ms-transform: scale(1,1);
+        -ms-transform: scale(1, 1);
       }
 
       .line__horizontal {
         transform: scaleX(1);
-        -ms-transform: scale(1,1);
+        -ms-transform: scale(1, 1);
       }
 
       .main-icon {
         opacity: 1;
         transform: scale(1);
-        -ms-transform: scale(1,1);
+        -ms-transform: scale(1, 1);
       }
     }
   }
@@ -122,18 +122,18 @@
     .lines-3 {
       .line__vertical {
         transform: scaleY(1);
-        -ms-transform: scale(1,1);
+        -ms-transform: scale(1, 1);
       }
 
       .line__horizontal {
         transform: scaleX(1);
-        -ms-transform: scale(1,1);
+        -ms-transform: scale(1, 1);
       }
 
       .main-icon {
         opacity: 1;
         transform: scale(1);
-        -ms-transform: scale(1,1);
+        -ms-transform: scale(1, 1);
       }
     }
   }
