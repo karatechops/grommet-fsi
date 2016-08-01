@@ -8,6 +8,7 @@ import Box from 'grommet/components/Box';
 import Meter from 'grommet/components/Meter';
 
 import Hero from '../components/Hero';
+import Hero2 from '../components/Hero2';
 
 export default class Section1 extends Component {
   constructor(props) {
@@ -160,13 +161,15 @@ export default class Section1 extends Component {
         </Box>
 
         <div className="illustration" ref="illustration">
-          <img className={`illustration--stacked`} style={{zIndex: 5}} src="../img/buildings-1.svg" /> 
           <img className={strollerStyles} src="../img/stroller.svg" /> 
           <img className={bikerStyles} src="../img/biker.svg" /> 
           <img className={woman2styles} src="../img/woman-2.svg" />
           <Hero layout={this.props.layout}
-                progress={this.props.progress} 
-                scrolling={this.props.scrolling} />
+            progress={this.props.progress} 
+            scrolling={this.props.scrolling} />
+          <Hero2 layout={this.props.layout}
+            progress={this.props.progress}
+            scrolling={this.props.scrolling} />
           <img className={bgStyles} src="../img/bg.svg" />
           <img className={musicLoverStyles} src="../img/music-lover.svg" />
           <img className={`illustration--stacked`} src="../img/camera-flash.svg" />

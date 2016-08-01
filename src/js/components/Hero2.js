@@ -5,22 +5,24 @@ import classnames from 'classnames';
 let isWalking = false;
 let animInterval;
 
-export default class Hero extends Component {
+export default class Hero2 extends Component {
   constructor(props) {
     super(props);
 
+    this._getHeroTrigger = this._getHeroTrigger.bind(this);
+
     this.state = {
       heroLoop: [
-        'hero',
-        'hero-walk-01',
-        'hero-walk-02'
+        'hero-woman',
+        'hero-walk-01-woman',
+        'hero-walk-02-woman'
       ],
-      currHeroImg: 'hero'
+      currHeroImg: 'hero-woman'
     };
   }
 
   componentDidUpdate(prevProps, prevState) {
-    if (this.props.scrolling === true && isWalking === false) {
+    if (this.props.scrolling === true && isWalking === false && this.props.progress > this._getHeroTrigger(this.props.layout)) {
       animInterval = setInterval(() => {
         switch(this.state.currHeroImg) {
           case this.state.heroLoop[1]:
@@ -41,18 +43,26 @@ export default class Hero extends Component {
       this.setState({currHeroImg: this.state.heroLoop[0]});
     }
 
-    //if 
+    // Removes lag when transitioning to stand. 
+    if(this.props.progress < this._getHeroTrigger(this.props.layout) && isWalking === true) {
+      clearInterval(animInterval);
+      isWalking = false;
+      this.setState({currHeroImg: this.state.heroLoop[0]});
+    }
+  }
+
+  _getHeroTrigger(layout) {
+    if (layout === 'small') return 25;
+    return 21;
   }
 
   render() {
-    let  heroTrigger = (this.props.layout === 'small')
-      ? 18
-      : 17;
+    let  heroTrigger = this._getHeroTrigger(this.props.layout);
 
     let heroStyles = classnames([
       'illustration--stacked', 
-      'illustration__hero', {
-        ['illustration__hero--active']: this.props.progress < heroTrigger
+      'illustration__hero-2', {
+        ['illustration__hero-2--active']: this.props.progress > heroTrigger
       }
     ]);
 
@@ -64,7 +74,7 @@ export default class Hero extends Component {
   }
 };
 
-Hero.propTypes = {
+Hero2.propTypes = {
   layout: PropTypes.string.isRequired,
   scrolling: PropTypes.bool,
   loop: PropTypes.array

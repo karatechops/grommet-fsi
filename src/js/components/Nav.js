@@ -3,7 +3,6 @@ import React, { Component, PropTypes } from 'react';
 import classnames from 'classnames';
 
 import Next from 'grommet/components/icons/base/Next';
-
 import Anchor from 'grommet/components/Anchor';
 import Headline from 'grommet/components/Headline';
 import Layer from 'grommet/components/Layer';
@@ -60,6 +59,8 @@ export default class Nav extends Component {
           <Anchor label={'Share'} icon={shareIcon} reverse={true} onClick={this._onShareClick} />
         </div>;
 
+    if (this.props.progress < 10 && this.props.layout !== 'small') navCta = null;
+    
     let layer = (this.state.layerActive) ? (
       <div className="share-layer">
         <Layer onClose={this._onLayerClose} closer={true} flush={true} align={"center"}>

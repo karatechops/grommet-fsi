@@ -3,175 +3,104 @@ import React from 'react';
 export default function illustration2 (props) {
   return (
     <div className={props.className}>
-			<svg version="1.1" id="Layer_1" x="0px" y="0px" viewBox="7215 -126 1958.6 303">				
+			<svg version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 1958.6 342.3" >
 				<g className="lines-1">
-					<g>
-						<g className="main-icon">
-							<circle className="st12" cx="7527.7" cy="-70.4" r="25"/>
-							<circle className="st6" cx="7527.7" cy="-70.4" r="20.4"/>
-							<line className="st13" x1="7527.7" y1="-70.4" x2="7537.7" y2="-84.7"/>
+					<line className="line__vertical st0" x1="210.5" y1="123.4" x2="210.5" y2="46.6"/>
+					<line className="line__vertical st0" x1="174.2" y1="144.6" x2="174.2" y2="43.9"/>
+					<line className="line__vertical st0" x1="440.4" y1="75.2" x2="440.4" y2="34.9"/>
+					<line className="line__horizontal line__horizontal--right st0" x1="335.6" y1="39.9" x2="438.8" y2="39.9"/>
+					<line className="line__horizontal line__horizontal--left st0" x1="174.1" y1="39.9" x2="263.6" y2="39.9"/>
+					<line className="line__vertical st0" x1="400.4" y1="162.5" x2="400.4" y2="45"/>
+					<g className="main-icon">
+						<g>
+							<circle className="st1" cx="296.8" cy="44" r="20.9"/>
+							<circle className="st2" cx="296.8" cy="44" r="17.1"/>
+							<line className="st3" x1="296.8" y1="44" x2="305.2" y2="32"/>
 							<g>
-								<line className="st14" x1="7527.7" y1="-102.8" x2="7527.7" y2="-97.9"/>
-								<line className="st14" x1="7523.2" y1="-102.8" x2="7523.2" y2="-97.9"/>
-								<line className="st14" x1="7532.2" y1="-102.8" x2="7532.2" y2="-97.9"/>
+								<line className="st4" x1="296.8" y1="16.8" x2="296.8" y2="20.9"/>
+								<line className="st4" x1="293.1" y1="16.8" x2="293.1" y2="20.9"/>
+								<line className="st4" x1="300.6" y1="16.8" x2="300.6" y2="20.9"/>
 							</g>
-							<path className="st14" d="M7537.2-101.6L7537.2-101.6c0-2.2-1.7-3.9-3.9-3.9h-11.2c-2.2,0-3.9,1.7-3.9,3.9l0,0"/>
+							<path className="st4" d="M304.8,17.8L304.8,17.8c0-1.8-1.5-3.3-3.3-3.3l-9.4,0c-1.8,0-3.3,1.5-3.3,3.3v0"/>
 							<g>
-								<line className="st14" x1="7545.5" y1="-96" x2="7551.3" y2="-90.2"/>
-								<line className="st14" x1="7509.9" y1="-96" x2="7504" y2="-90.2"/>
+								<line className="st4" x1="311.7" y1="22.5" x2="316.6" y2="27.4"/>
+								<line className="st4" x1="281.9" y1="22.5" x2="277" y2="27.4"/>
 							</g>
-							<line className="st6" x1="7527.7" y1="-90.8" x2="7527.7" y2="-86.3"/>
-							<line className="st6" x1="7527.7" y1="-54.5" x2="7527.7" y2="-50"/>
-							<line className="st6" x1="7507.3" y1="-70.4" x2="7511.8" y2="-70.4"/>
-							<line className="st6" x1="7543.6" y1="-70.4" x2="7548.1" y2="-70.4"/>
-						</g>
-					</g>
-					<g>
-						<g className="line__vertical" id="XMLID_1_">
-							<g>
-								<line className="st0" x1="7651.8" y1="-69.6" x2="7651.8" y2="-69.6"/>
-								<line className="st15" x1="7651.8" y1="-62.5" x2="7651.8" y2="67.7"/>
-								<line className="st0" x1="7651.8" y1="71.2" x2="7651.8" y2="71.2"/>
-							</g>
-						</g>
-					</g>
-					<g>
-						<g className="line__vertical" id="XMLID_3_">
-							<g>
-								<line className="st0" x1="7698.3" y1="-69.6" x2="7698.3" y2="-69.6"/>
-								<line className="st16" x1="7698.3" y1="-62.5" x2="7698.3" y2="-37.6"/>
-								<line className="st0" x1="7698.3" y1="-34" x2="7698.3" y2="-34"/>
-							</g>
-						</g>
-					</g>
-					<g>
-						<g className="line__vertical" id="XMLID_12_">
-							<g>
-								<line className="st0" x1="7381.3" y1="-69.1" x2="7381.3" y2="-69.1"/>
-								<line className="st17" x1="7381.3" y1="-62" x2="7381.3" y2="47.3"/>
-								<line className="st0" x1="7381.3" y1="50.8" x2="7381.3" y2="50.8"/>
-							</g>
-						</g>
-					</g>
-					<g>
-						<g className="line__vertical" id="XMLID_9_">
-							<g>
-								<line className="st0" x1="7423.9" y1="-68.4" x2="7423.9" y2="-68.4"/>
-								<line className="st18" x1="7423.9" y1="-61.3" x2="7423.9" y2="20.1"/>
-								<line className="st0" x1="7423.9" y1="23.7" x2="7423.9" y2="23.7"/>
-							</g>
-						</g>
-					</g>
-					<g>
-						<g className="line__horizontal line__horizontal--right" id="XMLID_5_">
-							<g>
-								<line className="st0" x1="7697.5" y1="-75.2" x2="7697.5" y2="-75.2"/>
-								<line className="st19" x1="7690.5" y1="-75.2" x2="7567.8" y2="-75.2"/>
-								<line className="st0" x1="7564.3" y1="-75.2" x2="7564.3" y2="-75.2"/>
-							</g>
-						</g>
-					</g>
-					<g>
-						<g className="line__horizontal line__horizontal--left" id="XMLID_7_">
-							<g>
-								<line className="st0" x1="7487.4" y1="-75.2" x2="7487.4" y2="-75.2"/>
-								<line className="st20" x1="7480.3" y1="-75.2" x2="7384.9" y2="-75.2"/>
-								<line className="st0" x1="7381.4" y1="-75.2" x2="7381.4" y2="-75.2"/>
-							</g>
+							<line className="st2" x1="296.8" y1="26.9" x2="296.8" y2="30.7"/>
+							<line className="st2" x1="296.8" y1="57.2" x2="296.8" y2="61"/>
+							<line className="st2" x1="279.8" y1="44" x2="283.5" y2="44"/>
+							<line className="st2" x1="310.1" y1="44" x2="313.9" y2="44"/>
 						</g>
 					</g>
 				</g>
 				<g className="lines-2">
-					<g>
-						<g className="line__vertical" id="XMLID_4_">
+					<g className="line__vertical">
+						<g id="XMLID_60_">
 							<g>
-								<line className="st0" x1="8163.5" y1="-46.3" x2="8163.5" y2="-46.3"/>
-								<line className="st1" x1="8163.5" y1="-39.2" x2="8163.5" y2="55.8"/>
-								<line className="st0" x1="8163.5" y1="59.4" x2="8163.5" y2="59.4"/>
+								<line className="st5" x1="963.9" y1="155.4" x2="963.9" y2="155.4"/>
+								<line className="st6" x1="963.9" y1="73.9" x2="963.9" y2="152"/>
+								<line className="st5" x1="963.9" y1="155.4" x2="963.9" y2="155.4"/>
 							</g>
 						</g>
 					</g>
-					<g>
-						<g className="line__vertical" id="XMLID_19_">
+					<g className="line__vertical">
+						<g id="XMLID_1_">
 							<g>
-								<line className="st0" x1="8023.3" y1="-67.6" x2="8023.3" y2="-67.6"/>
-								<line className="st2" x1="8023.3" y1="-60.3" x2="8023.3" y2="-27.2"/>
-								<line className="st0" x1="8023.3" y1="-23.5" x2="8023.3" y2="-23.5"/>
+								<line className="st5" x1="1099.6" y1="50.5" x2="1099.6" y2="50.5"/>
+								<line className="st7" x1="1099.6" y1="58.4" x2="1099.6" y2="62.4"/>
+								<line className="st5" x1="1099.6" y1="66.3" x2="1099.6" y2="66.3"/>
 							</g>
 						</g>
 					</g>
-					<g>
-						<g className="line__vertical" id="XMLID_11_">
+					<g className="line__horizontal line__horizontal--right">
+						<g id="XMLID_2_">
 							<g>
-								<line className="st0" x1="8326.1" y1="-68.5" x2="8326.1" y2="-68.5"/>
-								<line className="st3" x1="8326.1" y1="-61.3" x2="8326.1" y2="-50.4"/>
-								<line className="st0" x1="8326.1" y1="-46.8" x2="8326.1" y2="-46.8"/>
+								<line className="st5" x1="1099.6" y1="43.1" x2="1099.6" y2="43.1"/>
+								<line className="st8" x1="1092.7" y1="43.1" x2="1007.1" y2="43.1"/>
+								<line className="st5" x1="1003.7" y1="43.1" x2="1003.7" y2="43.1"/>
 							</g>
 						</g>
 					</g>
-					<g>
-						<g className="line__horizontal line__horizontal--right" id="XMLID_15_">
+					<g className="main-icon">
+						<g>
+							<path className="st2" d="M957.2,46.9l-14.2,0c-5.5,0-10-4.5-10-10v0c0-5.5,4.5-10,10-10l12,0"/>
+							<path className="st2" d="M945.1,26.9L945.1,26.9c0-5.8,4.7-10.5,10.5-10.5l10.4,0c5.7,0,10.3,4.6,10.3,10.3v0
+								c0,5.7-4.6,10.3-10.3,10.3h-0.6"/>
+							<path className="st2" d="M976.4,26.6h7.1c5.6,0,10.1,4.5,10.1,10.1v0c0,5.6-4.5,10.1-10.1,10.1h-8.6"/>
+							<path className="st2" d="M984.3,46.9L984.3,46.9c0,5.7-4.6,10.3-10.3,10.3l-12,0c-5.7,0-10.3-4.6-10.3-10.3v0"/>
+						</g>
+					</g>
+					<g className="line__vertical">
+						<g id="XMLID_7_">
 							<g>
-								<line className="st0" x1="8326.1" y1="-75" x2="8326.1" y2="-75"/>
-								<line className="st4" x1="8318.9" y1="-75" x2="8214.6" y2="-75"/>
-								<line className="st0" x1="8211" y1="-75" x2="8211" y2="-75"/>
+								<line className="st5" x1="846.8" y1="50.3" x2="846.8" y2="50.3"/>
+								<line className="st9" x1="846.8" y1="57.5" x2="846.8" y2="82.4"/>
+								<line className="st5" x1="846.8" y1="86" x2="846.8" y2="86"/>
 							</g>
 						</g>
 					</g>
-					<g>
-						<g className="line__horizontal line__horizontal--left" id="XMLID_17_">
+					<g className="line__horizontal line__horizontal--left">
+						<g id="XMLID_4_">
 							<g>
-								<line className="st0" x1="8117.1" y1="-75" x2="8117.1" y2="-75"/>
-								<line className="st5" x1="8109.9" y1="-75" x2="8026.9" y2="-75"/>
-								<line className="st0" x1="8023.3" y1="-75" x2="8023.3" y2="-75"/>
+								<line className="st5" x1="846.8" y1="42.7" x2="846.8" y2="42.7"/>
+								<line className="st10" x1="854" y1="42.7" x2="921.7" y2="42.7"/>
+								<line className="st5" x1="925.3" y1="42.7" x2="925.3" y2="42.7"/>
 							</g>
-						</g>
-					</g>
-					<g>
-						<g className="main-icon">
-							<path className="st6" d="M8155.4-70.5h-16.9c-6.6,0-11.9-5.3-11.9-11.9l0,0c0-6.6,5.3-11.9,11.9-11.9h14.3"/>
-							<path className="st6" d="M8141-94.4L8141-94.4c0-7,5.6-12.6,12.6-12.6h12.5c6.8,0,12.3,5.5,12.3,12.3l0,0c0,6.8-5.5,12.3-12.3,12.3
-								h-0.7"/>
-							<path className="st6" d="M8178.3-94.7h8.5c6.7,0,12.1,5.4,12.1,12.1l0,0c0,6.7-5.4,12.1-12.1,12.1h-10.3"/>
-							<path className="st6" d="M8187.8-70.5L8187.8-70.5c0,6.8-5.5,12.3-12.3,12.3h-14.4c-6.8,0-12.3-5.5-12.3-12.3l0,0"/>
 						</g>
 					</g>
 				</g>
 				<g className="lines-3">
+					<line className="line__vertical st0" x1="1555.7" y1="46.7" x2="1555.7" y2="196.6"/>
+					<line className="line__vertical st0" x1="1797" y1="53.5" x2="1797" y2="166.4"/>
+					<line className="line__horizontal line__horizontal--right st0" x1="1796.9" y1="45.3" x2="1704.6" y2="45.3"/>
+					<line className="line__horizontal line__horizontal--left st0" x1="1646.6" y1="46.8" x2="1558.3" y2="46.8"/>
 					<g className="main-icon">
-						<path className="st7" d="M8888.8-83.1V-93c0-7.7-6.2-13.9-13.9-13.9S8861-100.7,8861-93v9.9h-9.9v47.7h47.7v-47.7H8888.8z M8865-93
-							c0-5.5,4.5-9.9,9.9-9.9c5.5,0,9.9,4.5,9.9,9.9v9.9h-19.9L8865-93L8865-93z M8894.8-79.1v31.8h-39.7v-31.8H8894.8z M8855.1-39.4v-4
-							h39.7v4H8855.1z"/>
-						<path className="st8" d="M8880.9-67.2c0-3.3-2.7-6-6-6s-6,2.7-6,6c0,2.6,1.7,4.8,4,5.6v8.3h4v-8.3
-							C8879.2-62.4,8880.9-64.6,8880.9-67.2z M8874.9-65.2c-1.1,0-2-0.9-2-2s0.9-2,2-2s2,0.9,2,2S8876-65.2,8874.9-65.2z"/>
-					</g>
-					<g className="line__vertical" id="XMLID_21_">
-						<g>
-							<line className="st0" x1="8732.4" y1="-68.3" x2="8732.4" y2="-68.3"/>
-							<line className="st9" x1="8732.4" y1="-61.4" x2="8732.4" y2="95.3"/>
-							<line className="st0" x1="8732.4" y1="98.8" x2="8732.4" y2="98.8"/>
-						</g>
-					</g>
-					<g className="line__vertical" id="XMLID_28_">
-						<g>
-							<line className="st0" x1="9020.2" y1="-68.3" x2="9020.2" y2="-68.3"/>
-							<line className="st9" x1="9020.2" y1="-62.3" x2="9020.2" y2="72.3"/>
-							<line className="st0" x1="9020.2" y1="75.3" x2="9020.2" y2="75.3"/>
-						</g>
-					</g>
-					<g className="line__horizontal line__horizontal--left" id="XMLID_23_">
-						<g>
-							<line className="st0" x1="8732.2" y1="-75.1" x2="8732.2" y2="-75.1"/>
-							<line className="st10" x1="8739.4" y1="-75.1" x2="8835.9" y2="-75.1"/>
-							<line className="st0" x1="8839.5" y1="-75.1" x2="8839.5" y2="-75.1"/>
-						</g>
-					</g>
-					<g className="line__horizontal line__horizontal--right" id="XMLID_25_">
-						<g>
-							<line className="st0" x1="8909.2" y1="-75.1" x2="8909.2" y2="-75.1"/>
-							<line className="st11" x1="8916.1" y1="-75.1" x2="9016.8" y2="-75.1"/>
-							<line className="st0" x1="9020.3" y1="-75.1" x2="9020.3" y2="-75.1"/>
-						</g>
+						<path className="st11" d="M1668.2,31.7c0-4.6,3.7-8.3,8.3-8.3c4.6,0,8.3,3.7,8.3,8.3V40h-16.6V31.7z M1693.1,43.3v26.6l-33.2,0V43.3
+							L1693.1,43.3z M1659.9,76.5v-3.3l33.2,0v3.3H1659.9z M1688.1,40v-8.3c0-6.4-5.2-11.6-11.6-11.6c-6.4,0-11.6,5.2-11.6,11.6V40h-8.3
+							v39.9h39.9V40H1688.1z"/>
+						<path className="st12" d="M1681.5,53.3c0-2.7-2.2-5-5-5c-2.7,0-5,2.2-5,5c0,2.2,1.4,4,3.3,4.7v7h3.3v-7
+							C1680.1,57.3,1681.5,55.4,1681.5,53.3z M1676.5,54.9c-0.9,0-1.7-0.7-1.7-1.7s0.7-1.7,1.7-1.7c0.9,0,1.7,0.7,1.7,1.7
+							C1678.2,54.2,1677.4,54.9,1676.5,54.9z"/>
 					</g>
 				</g>
 			</svg>

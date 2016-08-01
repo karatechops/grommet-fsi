@@ -7,6 +7,7 @@ import Responsive from 'grommet/utils/Responsive';
 import classnames from 'classnames';
 
 import Box from 'grommet/components/Box';
+import Next from 'grommet/components/icons/base/Next';
 import Section from 'grommet/components/Section';
 import Heading from 'grommet/components/Heading';
 import Button from 'grommet/components/Button';
@@ -16,7 +17,7 @@ import Section2 from '../sections/Section2';
 import Background from './Background';
 import Nav from './Nav';
 
-//import '../../scss/index.scss';
+import '../../scss/index.scss';
 
 // Global timer to monitor scrolling.
 let SCROLL_TIMER;
@@ -87,7 +88,7 @@ class Home extends Component {
         scrolling: true
       });
     // Uncomment below for debug purposes.
-    // console.log('progress:', scrollPercentRounded);
+    //console.log('progress:', scrollPercentRounded);
     this._startScrollingTimer();
   }
 
@@ -96,9 +97,22 @@ class Home extends Component {
       'home'
     ]);
 
+    let startCtaClasses = classnames([
+      'start-cta', {
+        ['start-cta--active']: this.state.progress < 2
+      }
+    ]);
+
+    let startCta = (this.state.layout !== 'small')
+      ? <Box className={startCtaClasses} direction="row" responsive={false}>
+        Scroll right to start journey <Next />
+      </Box>
+      : null;
+
     return (
       <Box ref="home" className={homeClasses} style={{position:'relative', overflow:'auto', overflowY:'hidden', maxHeight:'100vh' }} wrap={false} responsive={false} direction="row">
-        <Nav progress={this.state.progress} />
+        <Nav progress={this.state.progress} layout={this.state.layout}/>
+        {startCta}
         <Section1 ref="section1" layout={this.state.layout} progress={this.state.progress} scrolling={this.state.scrolling}/>
         <Section2 layout={this.state.layout} progress={this.state.progress} />
 

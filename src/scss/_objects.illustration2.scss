@@ -7,10 +7,10 @@
   position: relative;
   margin: 0;
   align-self: flex-end;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 
   @include media-query(lap-and-up) {
-    padding-bottom: 40px;
+    padding-bottom: 20px;
     width: 210vw;
     min-width: 210vw;
   }
@@ -24,27 +24,19 @@
     width: 100%;
     align-self: flex-end;
 
-    .st0 { fill: none; stroke: #50C3CC; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round;  }
-    .st1 { fill: none; stroke: #50C3CC; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 0, 7.041; }
-    .st2 { fill: none; stroke: #50C3CC; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 0, 7.355; }
-    .st3 { fill: none; stroke: #50C3CC; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 0, 7.2242; }
-    .st4 { fill: none; stroke: #50C3CC; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 0, 7.1942; }
-    .st5 { fill: none; stroke: #50C3CC; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 0, 7.2179; }
-    .st6 { fill: none; stroke: #FFFFFF; stroke-width: 3; stroke-linecap: square; stroke-miterlimit: 10;  }
-    .st7 { fill: #FFFFFF; stroke: #614767; stroke-width: 0.75; stroke-miterlimit: 10;  }
-    .st8 { fill: #00AF86; stroke: #614767; stroke-width: 0.75; stroke-miterlimit: 10;  }
-    .st9 { fill: none; stroke: #50C3CC; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 0, 6.9651; }
-    .st10 { fill: none; stroke: #50C3CC; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 0, 7.1503; }
-    .st11 { fill: none; stroke: #50C3CC; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 0, 6.9434; }
-    .st12 { fill: none; stroke: #00B288; stroke-width: 3; stroke-miterlimit: 10; }
-    .st13 { fill: none; stroke: #F69679; stroke-width: 3; stroke-miterlimit: 10; }
-    .st14 { fill: none; stroke: #00B48D; stroke-width: 3; stroke-miterlimit: 10; }
-    .st15 { fill: none; stroke: #50C3CC; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 0, 7.0406; }
-    .st16 { fill: none; stroke: #50C3CC; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 0, 7.1176; }
-    .st17 { fill: none; stroke: #50C3CC; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 0, 7.0532; }
-    .st18 { fill: none; stroke: #50C3CC; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 0, 7.0853; }
-    .st19 { fill: none; stroke: #50C3CC; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 0, 7.0122; }
-    .st20 { fill: none; stroke: #50C3CC; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 0, 7.0654; }
+    .st0 {fill: none; stroke: #50C3CC; stroke-width: 4; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 10; stroke-dasharray: 0, 7; }
+    .st1 {fill: none; stroke: #00B288; stroke-width: 4; stroke-miterlimit: 10; }
+    .st2 {fill: none; stroke: #FFFFFF; stroke-width: 4; stroke-linecap: square; stroke-miterlimit: 10; }
+    .st3 {fill: none; stroke: #F69679; stroke-width: 4; stroke-miterlimit: 10; }
+    .st4 {fill: none; stroke: #00B48D; stroke-width: 4; stroke-miterlimit: 10; }
+    .st5 {fill: none; stroke: #50C3CC; stroke-width: 4; stroke-linecap: round; stroke-linejoin: round; }
+    .st6 {fill: none; stroke: #50C3CC; stroke-width: 4; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 0, 6.7928; }
+    .st7 {fill: none; stroke: #50C3CC; stroke-width: 4; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 0, 7.94; }
+    .st8 {fill: none; stroke: #50C3CC; stroke-width: 4; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 0, 6.8486; }
+    .st9 {fill: none; stroke: #50C3CC; stroke-width: 4; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 0, 7.1334; }
+    .st10 {fill: none; stroke: #50C3CC; stroke-width: 4; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 0, 7.1316; }
+    .st11 {fill: #FFFFFF; stroke: #614767; stroke-width: 0.5; stroke-miterlimit: 10; }
+    .st12 {fill: #00AF86; }
   
 
     .line__vertical {

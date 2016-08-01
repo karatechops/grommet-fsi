@@ -33,6 +33,7 @@ html {
   // instances without losing legibility.
   background: rgba(255, 255, 255, 0.75);
   z-index: 10;
+  pointer-events: none;
 
   @include media-query(lap-and-up) {
     top: 35%;
@@ -182,6 +183,21 @@ html {
   }
 }
 
+.start-cta {
+  position: absolute;
+  bottom: -45px;
+  right: 0px;
+  padding: 10px;
+  z-index: 10;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.74902);
+  transition: bottom 0.25s ease-out;
+
+  &.start-cta--active {
+    bottom: 0;
+  }
+}
+
 section.end-frame-illustration {
   width: 100vw;
   min-width: 100vw;
@@ -196,15 +212,24 @@ section.end-frame-illustration {
     min-width: 50vw;
   }
 
+  .end-frame-illustration__container {
+    height: 100%;
+    // Remove nav height to avoid image collision.
+    min-height: calc(100vh - 120px);
+    width: 100%;
+    display: flex;
+  }
+
   img {
     width: 100%;
     height: auto;
-    max-height: 100vh;
+    // Remove nav height to avoid image collision.
+    min-height: calc(100vh - 120px);
     margin: 0;
-    padding-bottom: 20px;
+    //padding-bottom: 20px;
 
     @include media-query(lap-and-up) {
-      padding-bottom: 40px;
+      //padding-bottom: 40px;
     }
   }
 }

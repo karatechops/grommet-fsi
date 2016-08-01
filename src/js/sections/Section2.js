@@ -102,9 +102,9 @@ export default class Section2 extends Component {
             credit union to a high-end financial boutique.
           </Heading>
         </Box>
-        <Hotspot style={{alignSelf: 'flex-end'}} content={hotspotContent} name="hotspot" top={'55%'} left={'77.5%'}>
-          <Hotspot style={{alignSelf: 'flex-end'}} content={hotspotContent} name="hotspot" top={'52%'} left={'20%'}>
-            <Hotspot style={{alignSelf: 'flex-end'}} content={hotspotContent} name="hotspot" top={'15%'} left={'53%'}>
+        <Hotspot style={{alignSelf: 'flex-end'}} content={hotspotContent} name="hotspot" top={'45%'} left={'79.4%'}>
+          <Hotspot style={{alignSelf: 'flex-end'}} content={hotspotContent} name="hotspot" top={'30%'} left={'20%'}>
+            <Hotspot style={{alignSelf: 'flex-end'}} content={hotspotContent} name="hotspot" top={'12%'} left={'53%'}>
               <Illustration2 className={illustration2Classes} />
             </Hotspot>
           </Hotspot>

@@ -1,80 +1,84 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!-- Generator: Adobe Illustrator 20.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="3041 -126 4195 303" style="enable-background:new 3041 -126 4195 303;" xml:space="preserve">
+	 viewBox="0 0 4195 340.3" style="enable-background:new 0 0 4195 340.3;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:none;stroke:#17181B;stroke-width:3;stroke-miterlimit:10;}
-	.st1{fill:none;stroke:#00B288;stroke-width:3;stroke-miterlimit:10;}
-	.st2{fill:none;stroke:#56C5D0;stroke-width:3;stroke-miterlimit:10;}
-	.st3{clip-path:url(#XMLID_2_);fill:none;stroke:#00B48D;stroke-width:3;stroke-miterlimit:10;}
-	.st4{clip-path:url(#XMLID_3_);fill:none;stroke:#F69679;stroke-width:3;stroke-miterlimit:10;}
-	.st5{fill:none;stroke:#F68D70;stroke-width:3;stroke-miterlimit:10;}
-	.st6{clip-path:url(#XMLID_4_);fill:none;stroke:#17181B;stroke-width:3;stroke-miterlimit:10;}
-	.st7{fill:none;stroke:#F69679;stroke-width:3;stroke-miterlimit:10;}
-	.st8{fill:none;stroke:#6A817C;stroke-width:3;stroke-miterlimit:10;}
-	.st9{fill:none;stroke:#6A817C;stroke-width:3;stroke-linecap:square;stroke-miterlimit:10;}
-	.st10{fill:#FFFFFF;stroke:#17181B;stroke-width:3;stroke-miterlimit:10;}
-	.st11{fill:#FFFFFF;stroke:#6A817C;stroke-width:3;stroke-miterlimit:10;}
+	.st0{fill:none;stroke:#17181B;stroke-width:6;stroke-miterlimit:10;}
+	.st1{fill:none;stroke:#00B288;stroke-width:4;stroke-miterlimit:10;}
+	.st2{fill:none;stroke:#56C5D0;stroke-width:6;stroke-miterlimit:10;}
+	.st3{clip-path:url(#XMLID_2_);fill:none;stroke:#6A817C;stroke-width:6;stroke-miterlimit:10;}
+	.st4{fill:none;stroke:#17181B;stroke-width:4;stroke-miterlimit:10;}
+	.st5{clip-path:url(#XMLID_3_);fill:none;stroke:#F69679;stroke-width:4;stroke-miterlimit:10;}
+	.st6{fill:none;stroke:#F68D70;stroke-width:4;stroke-miterlimit:10;}
+	.st7{clip-path:url(#XMLID_4_);fill:none;stroke:#17181B;stroke-width:4;stroke-miterlimit:10;}
+	.st8{fill:none;stroke:#F69679;stroke-width:4;stroke-miterlimit:10;}
+	.st9{fill:none;stroke:#6A817C;stroke-width:6;stroke-miterlimit:10;}
+	.st10{fill:none;stroke:#6A817C;stroke-width:4;stroke-linecap:square;stroke-miterlimit:10;}
+	.st11{fill:none;stroke:#6A817C;stroke-width:4;stroke-miterlimit:10;}
+	.st12{fill:#FFFFFF;stroke:#17181B;stroke-width:6;stroke-miterlimit:10;}
+	.st13{fill:#FFFFFF;stroke:#6A817C;stroke-width:4;stroke-miterlimit:10;}
+	.st14{fill:#FFFFFF;stroke:#6A817C;stroke-width:6;stroke-miterlimit:10;}
+	.st15{fill:none;stroke:#56C5D0;stroke-width:4;stroke-miterlimit:10;}
 </style>
 <g>
 	<g>
-		<line id="XMLID_628_" class="st0" x1="5743" y1="158.2" x2="5753.5" y2="151"/>
-		<path id="XMLID_433_" class="st1" d="M5699.9-30"/>
-		<path id="XMLID_432_" class="st1" d="M5695.5-19.6"/>
-		<path id="XMLID_431_" class="st2" d="M5703.1,99.7l37.6,50.9l6.4-4.4c-8.9-16.2-17.8-37.6-33.2-51.1c0,0,6.9-22.3,3.9-39.9"/>
-		<path id="XMLID_430_" class="st2" d="M5702,56c-1.4,14.3-21.5,99.7-21.5,99.7l-7.8,0l10.3-100.4"/>
-		<g id="XMLID_418_">
+		<line id="XMLID_101_" class="st0" x1="2737.4" y1="324.4" x2="2750.2" y2="315.6"/>
+		<path id="XMLID_100_" class="st1" d="M2685.3,96.7"/>
+		<path id="XMLID_99_" class="st1" d="M2679.9,109.4"/>
+		<path id="XMLID_98_" class="st2" d="M2689.2,253.7l45.4,61.6l7.8-5.3c-10.8-19.6-21.6-45.5-40.1-61.7c0,0,8.4-27,4.7-48.3"/>
+		<path id="XMLID_97_" class="st2" d="M2687.8,200.8c-1.7,17.3-26,120.5-26,120.5h-9.4l12.4-121.4"/>
+		<g id="XMLID_94_">
 			<defs>
-				<polyline id="XMLID_419_" points="5694,-16.9 5688.6,2.1 5677.2,-13.9 5684.9,-18.1 5696.4,-18.1 				"/>
+				<polyline id="XMLID_95_" points="2678.2,112.6 2671.6,135.6 2657.8,116.3 2667.1,111.2 2681,111.2 				"/>
 			</defs>
 			<clipPath id="XMLID_2_">
-				<use xlink:href="#XMLID_419_"  style="overflow:visible;"/>
+				<use xlink:href="#XMLID_95_"  style="overflow:visible;"/>
 			</clipPath>
-			<path id="XMLID_420_" class="st3" d="M5694.6-26.6c-4,5.5-7.4,10-6.8,15.1c0.5,4,3.6,8.1,5.2,9.9"/>
+			<path id="XMLID_96_" class="st3" d="M2678.9,100.9c-4.9,6.6-9,12-8.2,18.3c0.6,4.8,4.4,9.8,6.2,12"/>
 		</g>
-		<path id="XMLID_417_" class="st0" d="M5651.4,18c0.3-2.8,2.1-5.4,4.9-6.6l27.3,2c3.3,0.2,6.3-1.7,7.4-4.8
-			c3-8.3,8.7-24.2,11.3-31.1c1.4-3.9,3.3-6.2,5.1-7.7c4.1-3.3,10.2-0.7,10.9,4.5c0.2,1.2,0.2,2.5,0.2,4.1"/>
-		<g id="XMLID_315_">
+		<path id="XMLID_93_" class="st4" d="M2626.6,154.8c0.4-3.4,2.6-6.5,5.9-8l33,2.4c4,0.3,7.7-2.1,9-5.8c3.6-10,10.6-29.2,13.6-37.6
+			c1.7-4.7,4-7.5,6.1-9.3c4.9-3.9,12.4-0.8,13.2,5.4c0.2,1.4,0.3,3.1,0.3,5"/>
+		<g id="XMLID_90_">
 			<defs>
-				<polygon id="XMLID_415_" points="5689.9,-61.9 5706.4,-61.9 5716.7,-49.3 5722.8,-49.3 5722.8,-80.8 5689.9,-80.8 				"/>
+				<polygon id="XMLID_91_" points="2673.2,58.2 2693.2,58.2 2705.6,73.4 2713,73.4 2713,35.4 2673.2,35.4 				"/>
 			</defs>
 			<clipPath id="XMLID_3_">
-				<use xlink:href="#XMLID_415_"  style="overflow:visible;"/>
+				<use xlink:href="#XMLID_91_"  style="overflow:visible;"/>
 			</clipPath>
-			<circle id="XMLID_416_" class="st4" cx="5706.4" cy="-62.4" r="10.9"/>
+			<circle id="XMLID_92_" class="st5" cx="2693.2" cy="57.6" r="13.2"/>
 		</g>
-		<line id="XMLID_279_" class="st5" x1="5704.6" y1="-63.8" x2="5696.1" y2="-63.8"/>
-		<g id="XMLID_276_">
+		<line id="XMLID_89_" class="st6" x1="2691" y1="55.9" x2="2680.7" y2="55.9"/>
+		<g id="XMLID_86_">
 			<defs>
-				<path id="XMLID_277_" d="M5712.1-38.7l-4.9-20.5c-6.4,0-11.1,0-14.6,0l2,27.8L5712.1-38.7z"/>
+				<path id="XMLID_87_" d="M2700,86.3l-5.9-24.8c-7.7,0-13.4,0-17.6,0l2.4,33.6L2700,86.3z"/>
 			</defs>
 			<clipPath id="XMLID_4_">
-				<use xlink:href="#XMLID_277_"  style="overflow:visible;"/>
+				<use xlink:href="#XMLID_87_"  style="overflow:visible;"/>
 			</clipPath>
-			<path id="XMLID_278_" class="st6" d="M5708.7-37.9l-2.5-6.3c-6.6,1.4-10.4-3.6-10.4-9.5c0-2.1,0-9.8,0-12.2"/>
+			<path id="XMLID_88_" class="st7" d="M2695.9,87.3l-3-7.7c-8,1.7-12.6-4.4-12.6-11.5c0-2.5,0-11.8,0-14.8"/>
 		</g>
-		<line id="XMLID_275_" class="st0" x1="5670.1" y1="163" x2="5682" y2="163"/>
-		<path class="st7" d="M5720-68.8l2.1-2.1c2.2-2.2,2.2-5.7,0-7.9v0c-2.2-2.2-5.7-2.2-7.9,0l-2.1,2.1"/>
-		<path class="st8" d="M5725.7,21.4l-26.9,0c-4.9,0-8.9,4-8.9,8.9v18l44.7,0v-18C5734.6,25.4,5730.6,21.4,5725.7,21.4z"/>
-		<polyline class="st9" points="5705.4,28.7 5705.4,33.3 5719.1,33.3 5719.1,28.7 		"/>
-		<path class="st8" d="M5727.3,13.8v-33.5c0-6.6-2.6-13-7.3-17.7v0"/>
+		<line id="XMLID_85_" class="st0" x1="2649.2" y1="330.2" x2="2663.6" y2="330.2"/>
+		<path class="st8" d="M2709.6,49.8l2.6-2.6c2.6-2.6,2.6-6.9,0-9.5l0,0c-2.6-2.6-6.9-2.6-9.5,0l-2.6,2.6"/>
+		<path class="st9" d="M2718.4,159h-36.3c-4.9,0-8.9,4-8.9,8.9v23.7l54.1,0v-23.7C2727.3,163,2723.3,159,2718.4,159z"/>
+		<polyline class="st10" points="2691.9,167.8 2691.9,173.4 2708.5,173.4 2708.5,167.8 		"/>
+		<path class="st9" d="M2718.5,149.7v-40.5c0-8-3.2-15.7-8.9-21.4v0"/>
 	</g>
 	<g>
 		<g>
-			<line class="st8" x1="5535.3" y1="145.7" x2="5571.7" y2="109.3"/>
-			<line class="st8" x1="5608.1" y1="145.7" x2="5571.7" y2="109.3"/>
-			<circle class="st10" cx="5535.3" cy="145.7" r="17.3"/>
-			<circle class="st11" cx="5535.3" cy="145.7" r="4.9"/>
-			<circle class="st10" cx="5608.1" cy="145.7" r="17.3"/>
-			<circle class="st11" cx="5608.1" cy="145.7" r="4.9"/>
+			<line class="st11" x1="2486.2" y1="309.3" x2="2530.2" y2="265.2"/>
+			<line class="st11" x1="2574.3" y1="309.3" x2="2530.2" y2="265.2"/>
+			<circle class="st12" cx="2486.2" cy="309.3" r="20.9"/>
+			<circle class="st13" cx="2486.2" cy="309.3" r="5.9"/>
+			<circle class="st12" cx="2574.3" cy="309.3" r="20.9"/>
+			<circle class="st13" cx="2574.3" cy="309.3" r="5.9"/>
 		</g>
 		<g>
-			<path class="st2" d="M5567.1,69.1l0-50.4c-27.9,0-50.4,22.6-50.4,50.4"/>
+			<path class="st2" d="M2524.6,216.6v-61c-33.7,0-61,27.3-61,61"/>
 		</g>
-		<path class="st8" d="M5609.8,69.1l34.7-34.7c5.7-5.7,13.3-8.8,21.4-8.8"/>
-		<path class="st11" d="M5603,111.2l-62.7,0c-13.1,0-23.7-10.6-23.7-23.7V74.7l110.1,0v12.8C5626.7,100.6,5616.1,111.2,5603,111.2z"
-			/>
-		<line class="st2" x1="5555.6" y1="28.6" x2="5555.6" y2="69.1"/>
+		<path class="st11" d="M2576.3,216.6l42-42c6.9-6.9,16.1-10.7,25.8-10.7"/>
+		<path class="st14" d="M2573.1,267.6h-85.7c-13.1,0-23.7-10.6-23.7-23.7v-20.5l133.2,0v20.5C2596.8,257,2586.2,267.6,2573.1,267.6z
+			"/>
+		<line class="st15" x1="2510.7" y1="167.7" x2="2510.7" y2="216.6"/>
 	</g>
 </g>
 </svg>
