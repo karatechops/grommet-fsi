@@ -339,8 +339,10 @@ section {
 
 .ie11 {
   .grommet-ux-app {
-    .end-frame-illustration img {
-      max-height: none;
+    section.end-frame-illustration {
+      img {
+        max-height: none;
+      }
     }
   }
 }
