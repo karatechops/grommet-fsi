@@ -14,7 +14,6 @@ import Button from 'grommet/components/Button';
 
 import Section1 from '../sections/Section1';
 import Section2 from '../sections/Section2';
-import Background from './Background';
 import Nav from './Nav';
 
 import '../../scss/index.scss';
