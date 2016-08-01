@@ -17,13 +17,13 @@ export default class Section2 extends Component {
 
   render() {
     let text5Left = (this.props.layout === 'small')
-      ? '28vw'
+      ? '38vw'
       : '15vw';
     let text6Left = (this.props.layout === 'small')
-      ? '163vw'
+      ? '193vw'
       : '84vw';
     let text7Left = (this.props.layout === 'small')
-      ? '310vw'
+      ? '364vw'
       : '157vw';
 
     let sectionColorTrigger = (this.props.layout === 'small')
