@@ -16,7 +16,7 @@ import Section1 from '../sections/Section1';
 import Section2 from '../sections/Section2';
 import Nav from './Nav';
 
-import '../../scss/index.scss';
+//import '../../scss/index.scss';
 
 // Global timer to monitor scrolling.
 let SCROLL_TIMER;
