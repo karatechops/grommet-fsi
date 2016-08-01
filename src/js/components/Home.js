@@ -17,7 +17,7 @@ import Section2 from '../sections/Section2';
 import Background from './Background';
 import Nav from './Nav';
 
-//import '../../scss/index.scss';
+import '../../scss/index.scss';
 
 // Global timer to monitor scrolling.
 let SCROLL_TIMER;
@@ -116,8 +116,8 @@ class Home extends Component {
         <Section1 ref="section1" layout={this.state.layout} progress={this.state.progress} scrolling={this.state.scrolling}/>
         <Section2 layout={this.state.layout} progress={this.state.progress} />
 
-        <Section className="end-frame-illustration" colorIndex="neutral-1" pad="none" responsive={false}>
-          <Background />
+        <Section className="end-frame-illustration" colorIndex="neutral-1" pad="none" responsive={false} justify="end" align="end">
+          <img src="../img/end.svg" />
         </Section>
 
         <Section className="end-frame" colorIndex="neutral-1" pad="none" justify="center" align="start" >
@@ -126,7 +126,7 @@ class Home extends Component {
           accelerating the digital transformation of the 
           Financial Services industry, visit us here
           </Heading>
-          <Button className="end-frame__button" href="http://www.hpe.com/solutions/enable" label="www.hpe.com" primary={true} />
+          <Button className="end-frame__button" href="http://www.hpe.com/solutions/enable" label="Learn More" primary={true} />
         </Section>
 
       </Box>

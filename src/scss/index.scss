@@ -185,9 +185,9 @@ html {
 
 .start-cta {
   position: absolute;
-  bottom: -45px;
+  bottom: -95px;
   right: 0px;
-  padding: 10px;
+  padding: 48px;
   z-index: 10;
   border-radius: 20px;
   background: rgba(255, 255, 255, 0.74902);
@@ -212,24 +212,26 @@ section.end-frame-illustration {
     min-width: 50vw;
   }
 
-  .end-frame-illustration__container {
-    height: 100%;
+  /*.end-frame-illustration__container {
+    //height: 100%;
     // Remove nav height to avoid image collision.
-    min-height: calc(100vh - 120px);
+    max-height: calc(100vh - 120px);
     width: 100%;
+    height: auto;
     display: flex;
-  }
+    align-self: flex-end;
+  }*/
 
   img {
     width: 100%;
     height: auto;
     // Remove nav height to avoid image collision.
-    min-height: calc(100vh - 120px);
+    max-height: calc(100vh - 120px);
     margin: 0;
-    //padding-bottom: 20px;
+    padding-bottom: 10px;
 
     @include media-query(lap-and-up) {
-      //padding-bottom: 40px;
+      padding-bottom: 20px;
     }
   }
 }
