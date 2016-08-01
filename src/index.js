@@ -16,10 +16,17 @@ function _isMobileDevice() {
   return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
 }
 
+// Conditional for IE to assist with SVG inconsistencies.
+function _isIe11() {
+  return (!!window.MSInputMethodContext && !!document.documentMode);
+}
+
 import routes from './js/routes';
 import ReactDOM from 'react-dom';
 
 const element = document.getElementById('content');
 ReactDOM.render(routes, element);
+
 document.body.classList.remove('loading');
 if (_isMobileDevice()) document.body.classList.add('mobile');
+if (_isIe11()) document.body.classList.add('ie11');

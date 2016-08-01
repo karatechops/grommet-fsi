@@ -185,7 +185,7 @@ html {
 
 .start-cta {
   position: absolute;
-  bottom: -95px;
+  bottom: -125px;
   right: 0px;
   padding: 48px;
   z-index: 10;
@@ -211,16 +211,6 @@ section.end-frame-illustration {
     width: 50vw;
     min-width: 50vw;
   }
-
-  /*.end-frame-illustration__container {
-    //height: 100%;
-    // Remove nav height to avoid image collision.
-    max-height: calc(100vh - 120px);
-    width: 100%;
-    height: auto;
-    display: flex;
-    align-self: flex-end;
-  }*/
 
   img {
     width: 100%;
@@ -344,5 +334,13 @@ section {
 #{$dark-background-context} {
   .end-frame__button {
     color: #fff;
+  }
+}
+
+.ie11 {
+  .grommet-ux-app {
+    .end-frame-illustration img {
+      max-height: none;
+    }
   }
 }
