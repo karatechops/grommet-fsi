@@ -109,7 +109,7 @@ export default class Section1 extends Component {
           <Heading className="text-frame__title" tag="h3">
             Regulatory Reform is reshaping the industry
           </Heading>
-          <Box className="text-frame__row" direction="row">
+          <Box className="text-frame__row" direction="column">
             <Heading tag="h1">
               $97.3Bn
             </Heading>
@@ -123,7 +123,7 @@ export default class Section1 extends Component {
           <Heading className="text-frame__title" tag="h3">
             The Economics of the Financial Services Business have changed
           </Heading>
-          <Box direction="row" className="text-frame__row">
+          <Box direction="column" className="text-frame__row">
             <Heading tag="h1">
               25-30%
             </Heading>
