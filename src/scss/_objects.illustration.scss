@@ -67,7 +67,7 @@
     width: 36vw;
     transform: translateX(-50%);
     z-index: 2;
-    bottom: 16px;
+    bottom: 0;
 
     @include media-query(lap-and-up) {
       width: 16vw;
