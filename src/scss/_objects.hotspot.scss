@@ -30,7 +30,6 @@ $base-size: 40px;
 }
 
 .hotspot {
-	// Do we need inline-block?
 	display: inline-block;
 	position: relative;
 
@@ -61,7 +60,7 @@ $base-size: 40px;
 					border-radius: $base-size;
 					padding: 9px;
 					background: nth($brand-accent-colors, 1);
-					stroke: #fff;
+					stroke: nth($brand-grey-colors, 1);
 			  }
 
 			  &::after {
