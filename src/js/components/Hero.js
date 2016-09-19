@@ -40,8 +40,6 @@ export default class Hero extends Component {
       isWalking = false;
       this.setState({currHeroImg: this.state.heroLoop[0]});
     }
-
-    //if 
   }
 
   render() {

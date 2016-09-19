@@ -6,6 +6,8 @@ import Section from 'grommet/components/Section';
 import Heading from 'grommet/components/Heading';
 import Headline from 'grommet/components/Headline';
 import Box from 'grommet/components/Box';
+import Anchor from 'grommet/components/Anchor';
+import Pulse from 'grommet/components/icons/Pulse';
 
 import Illustration2 from '../components/Illustration2';
 import Hotspot from '../components/Hotspot';
@@ -27,8 +29,8 @@ export default class Section2 extends Component {
       : '157vw';
 
     let sectionColorTrigger = (this.props.layout === 'small')
-      ? 58
-      : 47;
+      ? 57
+      : 52;
 
     let sectionClasses = classnames([
       'section-2', {
@@ -38,15 +40,15 @@ export default class Section2 extends Component {
     ]);
 
     let building1Trigger = (this.props.layout === 'small')
-      ? 64
+      ? 62
       : 63;
 
     let building2Trigger = (this.props.layout === 'small')
-      ? 74
+      ? 72
       : 73;
 
     let building3Trigger = (this.props.layout === 'small')
-      ? 84
+      ? 82
       : 84;
 
     let illustration2Classes = classnames([
@@ -102,7 +104,8 @@ export default class Section2 extends Component {
             credit union to a high-end financial boutique.
           </Heading>
         </Box>
-        <Hotspot style={{alignSelf: 'flex-end'}} content={hotspotContent} name="hotspot" top={'45%'} left={'79.4%'}>
+
+        <Hotspot style={{alignSelf: 'flex-end'}} tabIndex="0" content={hotspotContent} name="hotspot" top={'45%'} left={'79.4%'}>
           <Hotspot style={{alignSelf: 'flex-end'}} content={hotspotContent} name="hotspot" top={'30%'} left={'20%'}>
             <Hotspot style={{alignSelf: 'flex-end'}} content={hotspotContent} name="hotspot" top={'12%'} left={'53%'}>
               <Illustration2 className={illustration2Classes} />

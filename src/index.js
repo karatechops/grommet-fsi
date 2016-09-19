@@ -1,6 +1,9 @@
 // (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
 
 import './lib/modernizr';
+import App from './js/App';
+import React from 'react';
+import ReactDOM from 'react-dom';
 
 if (! Modernizr.flexbox ||
   ! Modernizr.rgba) {
@@ -21,11 +24,8 @@ function _isIe11() {
   return (!!window.MSInputMethodContext && !!document.documentMode);
 }
 
-import routes from './js/routes';
-import ReactDOM from 'react-dom';
-
 const element = document.getElementById('content');
-ReactDOM.render(routes, element);
+ReactDOM.render(<App />, element);
 
 document.body.classList.remove('loading');
 if (_isMobileDevice()) document.body.classList.add('mobile');

@@ -138,8 +138,8 @@ export default class Section1 extends Component {
             Customer base for financial institutions is shifting
           </Heading>
           <Box direction="row" justify="center" align="center">
-            <Meter value={25} type="circle" size="medium" units="%" 
-              a11yTitleId="meter-title" a11yDescId="meter-desc" />
+            <Meter value={25} type="circle" size="small" units="%" 
+              colorIndex="accent-3"/>
             <Heading tag="h3">
               of the customers of any given bank indicate brand loyalty
             </Heading>
@@ -151,8 +151,8 @@ export default class Section1 extends Component {
             Technology is creating new opportunities and threats.
           </Heading>
           <Box direction="row" justify="center" align="center">
-            <Meter value={62} type="circle" size="medium" units="%" 
-              a11yTitleId="meter-title" a11yDescId="meter-desc" />
+            <Meter value={62} type="circle" size="small" units="%" 
+              colorIndex="accent-3" />
             <Heading tag="h3">
               Innovative banks are likely to see 62% growth 
               over the next 5 years vs  market average 35%.

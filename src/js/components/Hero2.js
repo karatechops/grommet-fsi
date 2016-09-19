@@ -52,7 +52,7 @@ export default class Hero2 extends Component {
   }
 
   _getHeroTrigger(layout) {
-    if (layout === 'small') return 25;
+    if (layout === 'small') return 23;
     return 21;
   }
 

@@ -1,14 +1,8 @@
 {
-  "name": "grommet-horizontal-template",
+  "name": "grommet-contextual-immersion",
   "version": "0.0.1",
   "main": "src/index.js",
-  "description": "Grommet Horizontal Scroll Template.",
-  "authors": [
-    "Alan Souza",
-    "Bryan Jacquot",
-    "Chris Carlozzi",
-    "Eric Soderberg"
-  ],
+  "description": "Grommet Contextual Immersion Infograph Template.",
   "homepage": "http://grommet.io",
   "license": "Apache-2.0",
   "repository": {
@@ -29,9 +23,8 @@
     "json-stringify-pretty-compact": "^1.0.1",
     "jsx-to-string": "^0.2.6",
     "morgan": "^1.5.0",
-    "react": "^15.0.2",
-    "react-dom": "^15.0.2",
-    "react-router": "^2.3.0",
+    "react": "^15.3.1",
+    "react-dom": "^15.3.1",
     "throng": "^4.0.0"
   },
   "devDependencies": {

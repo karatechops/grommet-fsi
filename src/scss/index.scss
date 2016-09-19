@@ -2,7 +2,6 @@
 
 @import 'grommet/scss/hpe/index';
 @import 'settings.defaults';
-@import 'objects.meter';
 @import 'objects.nav';
 @import 'objects.illustration';
 @import 'objects.illustration2';
@@ -16,9 +15,9 @@ html {
 }
 
 .grommetux-app {
-  overflow: scroll;
-  overflow-x: scroll;
-  overflow-y: hidden;
+  //overflow: scroll;
+  //overflow-x: visible;
+  //overflow-y: hidden;
   // The below will allow iOS to maintain momentum in the scroll.
   // Side effect is image juttering.
   //-webkit-overflow-scrolling: touch;
@@ -86,10 +85,6 @@ html {
 
   .text-frame__row {
     flex-wrap: wrap;
-
-    @include media-query(lap-and-up) {
-      //flex-wrap: nowrap;
-    }
   }
 
   .grommetux-meter {
