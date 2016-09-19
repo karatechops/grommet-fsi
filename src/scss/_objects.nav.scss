@@ -91,7 +91,7 @@ nav.section-nav {
     }
 
     .section-nav__control-start {
-      @include media-query(lap-and-up){
+      @include media-query(lap-and-up) {
         display: none;
       }
     }
