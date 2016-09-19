@@ -6,8 +6,6 @@ import Section from 'grommet/components/Section';
 import Heading from 'grommet/components/Heading';
 import Headline from 'grommet/components/Headline';
 import Box from 'grommet/components/Box';
-import Anchor from 'grommet/components/Anchor';
-import Pulse from 'grommet/components/icons/Pulse';
 
 import Illustration2 from '../components/Illustration2';
 import Hotspot from '../components/Hotspot';

@@ -3,7 +3,6 @@
 import React from 'react';
 import GrommetApp from 'grommet/components/App';
 import Home from './components/Home';
-import Nav from './components/Nav';
 
 class App extends React.Component {
   render() {
