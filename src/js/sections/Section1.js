@@ -6,6 +6,7 @@ import Section from 'grommet/components/Section';
 import Heading from 'grommet/components/Heading';
 import Box from 'grommet/components/Box';
 import Meter from 'grommet/components/Meter';
+import Value from 'grommet/components/Value';
 
 import Hero from '../components/Hero';
 import Hero2 from '../components/Hero2';
@@ -24,7 +25,7 @@ export default class Section1 extends Component {
       mounted: true
     });
   }
-
+  
   render() {
     let text1Left = (this.props.layout === 'small')
       ? '250vw'
@@ -138,8 +139,10 @@ export default class Section1 extends Component {
             Customer base for financial institutions is shifting
           </Heading>
           <Box direction="row" justify="center" align="center">
-            <Meter value={25} type="circle" size="small" units="%" 
-              colorIndex="accent-3"/>
+            <Box flex="grow">
+              <Meter value={25} type="circle" size="small" 
+                label={<Value value={25} units="%" />} colorIndex="accent-3"/>
+            </Box>
             <Heading tag="h3">
               of the customers of any given bank indicate brand loyalty
             </Heading>
@@ -151,8 +154,10 @@ export default class Section1 extends Component {
             Technology is creating new opportunities and threats.
           </Heading>
           <Box direction="row" justify="center" align="center">
-            <Meter value={62} type="circle" size="small" units="%" 
-              colorIndex="accent-3" />
+            <Box flex="grow">
+              <Meter value={62} type="circle" size="small" 
+                label={<Value value={62} units="%" />} colorIndex="accent-3" />
+            </Box>
             <Heading tag="h3">
               Innovative banks are likely to see 62% growth 
               over the next 5 years vs  market average 35%.

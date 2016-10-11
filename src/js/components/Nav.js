@@ -60,10 +60,9 @@ export default class Nav extends Component {
           </Box>
         </div>
       : <div className={`${CLASS_ROOT}__control`}>
-          <Anchor label={'Share'} icon={shareIcon} reverse={true} onClick={this._onShareClick} />
+          <Anchor label="Share" icon={shareIcon} reverse={true} 
+            onClick={this._onShareClick} />
         </div>;
-
-    //if (this.props.progress < 10 && this.props.layout !== 'small') navCta = null;
     
     let layer = (this.state.layerActive) ? (
       <div className="share-layer">
